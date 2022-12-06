@@ -24,7 +24,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt install texlive-latex-extra -y
-          sudo apt-get install texlive-lang-european -y
+          sudo apt-get install texlive-lang-german
           pdflatex ./NBecker_Studienarbeit.tex
       - uses: actions/upload-artifact@v3
         with:
