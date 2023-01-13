@@ -43,6 +43,8 @@ This is the Abstract
 Schon seit Jahren sind informatische Errungenschaften und Wirtschaftsbereiche wie die Produktion eng miteinander verknüpft. Längst haben die Unternehmen begriffen, dass der Einsatz von Softwarelösungen einen postiven Effekt auf die Produtivität und die Wirschaftlichkeit haben.
 Das Thema der künstlichen Intelligenz ist momentan/schon seit Jahren eines der größten Forschungsfelder in der Informatik. 
 
+RELEVANZ in der Wirtschaft von KI -> auch in der Produktion -> Immer wieder neue Erkenntnisse, viel Forschung -> Potentiale 
+
 
 \chapter{Stand der Technik}
 
@@ -51,43 +53,70 @@ Das Ziel dieser Arbeit ist es, die Protentiale von künstlicher Intelligenz in d
 \section{Künstliche Intelligenz}
 
 Kaum eine Technologie bietet Grundlage für mehr Utopien und Dystropien als die künstliche Intelligenz. 
-Künstliche Intelligenz ist ein Forschungzweig der Informatik und beschreibt eher einen Sammelbegriff von Technologien und Disziplinen. Grob geht es hier um technische Systeme, die selbstständig Lösungen für Probleme finden oder Entscheidungen treffen können. \cite{01} %\cite{10}
+Künstliche Intelligenz (engl. Artificial Intelligence oder AI) ist ein Forschungzweig der Informatik und beschreibt eher einen Sammelbegriff als konkrete Disziplin oder Technologien. Grob geht es hier um technische Systeme, die selbstständig Lösungen für Probleme finden oder Entscheidungen treffen können. \cite{01} %\cite{10}
 
 Dieses Kapitel der Arbeit klärt den Begriff der künstlichen Intelligenz und beschreibt relevante Ansätze und Technologien aus diesem Forschungsfeld. Anschließend werden aktuelle Anwendungsbereiche behandelt. Mögliche Zukunftsentwicklungen werden unter Zurhilfenahme des Trendsonars des Kompetenzzentrums Öffentliche IT (ÖFIT) aus dem Jahr 2018 zusammengefasst und bewertet. 
 
 \subsection{Grundlagen}
 
-Der Begriff sowie auch die Definition der künstlichen Intelligenz ist in der Literatur uneindeutig. Schon für die Intelligenz an sich existiert keine allgemeingültige Definition und nur umstrittene Methoden zur Messung von Intelligenz. Über die letzten Jahrzehnte hat sich sowohl die Beschreibung des Forschungsgebietes, als auch dessen Zielsetzung immer wieder gewandelt. Bei der Begründung des Forschungsgebietes 1955 bei einer Sommer...., beschrieb Teilnehmer John McCarthy künstliche Intelligenz als "... Maschinen zu entwickeln, die sich verhalten, als verfügten sie über menschliche Intelligenz.".
-... andere Def, heutzutage
- \cite{01}  %gerne nach andere Literatur hier zb 10
+Der Begriff sowie auch die Definition der künstlichen Intelligenz ist in der Literatur uneindeutig. Schon für die Intelligenz an sich existiert keine allgemeingültige Definition und nur umstrittene Methoden zur Messung dieser. Über die letzten Jahrzehnte hat sich sowohl die Beschreibung des Forschungsgebietes, als auch dessen Zielsetzung immer wieder gewandelt. Ihren Ursprung fand die künstliche Intelligenz im Jahr 1955 mit der ersten Defintion von John McCarthy:
+\begin{quote}
+  Ziel der KI ist es, Maschinen zu entwickeln, die sich verhalten, als verfügten sie über Intelligenz.
+\end{quote}
+ Mit der Schwierigkeit Intelligenz zu definieren, verliert diese Definition an Aussagenkraft. Eine weitere Definition von Elaine Rich 1983 beschreibt KI wie folgt: 
+ \begin{quote}
+  Artificial Intelligence is the study of how to make computers do things at which, at the moment, humans are better.
+ \end{quote} 
+ Damit schafft Rich eine Beschreibung, die sowohl in der Vergangenheit, als auch in der Zukunft Anwendung findet. Beispielsweise sind Menschen bei Erkennen von Objekten, Menschen oder auch den Maschinen noch weit überlegen. Bild- und Spracherkennung sind wichtige Forschungsbereiche der KI.  Ein zentrales Gebiet der Forschung ist demnach auch das maschinelle Lernen, denn vorallem die Lernfähigkeit des Mensch durch Adaptivität stellt sich für Computer als Herausforderung dar.Dahingegen ist die Entwicklung von Schachcomputern nicht mehr relevant, denn diese sind bereits besser als der Mensch. Dennoch geht es bei KI nicht nur um pragmatische praktische Implementierungen intelligenter Verfahren. Ein Teil des Forschungsgebietes ist es auch ein Verständnis für das menschliche Handeln und Schließen, bespielsweise in der Kognitionswissenschaft.
+ %\cite{11}
+
+Die Forschungsgegenstände und die Ziele der KI haben sich seit der ihren Anfängen geändert. Während früher ausschließlich an Univerisäten mit Zielen wie der Entwicklung eines Schachcomputers, der dem Mensch überlegen ist, geforscht wurde, stehen heutzutage kommerzielle Anwendungen im Vordergrund. 
+Gerade weil KI mittlerweile eine große Bedeutung in der Wirtschaft hat, wird mehr Geld in die Forschung investiert. So forschen nicht nur Universitäten, sondern auch andere Forschungsinstitute und Unternehmen in vielen Bereichen der KI. Auch die Verfügbarkeit von großen Datenmengen zu Trainingszwecken, die durch Verfahren der Daten-Analyse (Big-Data) für KI genutzt werden können, tragen einen großen Teil zur Erfolgen der jüngeren Vergangenheit und Gegenwart bei. 
 
 Grundsätzlich wird zwischen schwacher und starker KI unterschieden. Schwache KI... 
 Im Gegensatz dazu wird bei starker KI eine komplette Nachbildung der menschlichen Intelligenz verstanden. Diese ist nicht nur auf ein Gebiet spezialisiert ist, sondern agiert gebietsübergreifend. Das bedeutet, dass Erkenntnisse aus einem Bereich auf andere Bereiche anwenden werden können. In der aktuellen Forschung ist die Entwicklung ein starken Intelligenz jedoch nicht nicht absehbar. 
 Im Kotext dieser Arbeit und auch in weiten Teilen der Forschung und Anwendungen wird von schwacher KI gesprochen.
 
-\subsection{Wichtige Verfahren und Ansätze des Froschungsfeldes der KI}
+Die meisten KI-Anwendungen sind also auf eine Aufgabe speziell ausgerichtet. 
+
+\subsection{Verfahren und Ansätze des Froschungsfeldes der KI}
 
 Nicht nur die Definition auch eine Segmentierung, Kategorisierung oder Einteilung der Technologien und Ansätze des umfangreichen und höchstdynamischen Forschungsgebietes der künstlichen Intelligenz ist nicht einfach und wird unterschiedlich vorgenommen:
 %---Sieben Segmente künstlicher Intelligenz (Maschineller lernen, Robotik, Kybernetik,Expertensysteme, Verarbeitung natürlicher Sprachen, industrielle Bildverarbeitung, Spracherkennung)??( https://www.arnold-it.com/digitalisierung/kuenstliche-intelligenz-ki/)---
 %---Teilgebiete aufgeteilt in Handeln, Wahrnhemen und lernen, je 4 untergebiete (https://www.marketinginstitut.biz/blog/kuenstliche-intelligenz/) ---
-Diese Arbeit orientiert sich bei der Kategorisierung des Trendsonar des ÖFIT. Dieses unterteilt 28 Technologien und Ansätze in drei Bereiche.  
+Diese Arbeit orientiert sich bei der Kategorisierung des Trendsonar des ÖFIT. Dieses unterteilt 28 Technologien und Ansätze in die folgenden drei Bereiche: Lernmethoden, Technologien und Algorithmen, sowie Systeme und Architekturen. Wobei diese Bereich nicht vollständig voneinander zu trennen sind. Im Folgenden werden die relevantesten Ansätze kurz beschrieben. 
 
 \subsubsection{Lernmethoden}
 
 Ein Segment von künstlicher Intelligenz ist das maschinelle Lernen. Hier wird das technische System mit Daten trainiert...
 
+-	Methoden mit denen KI-Systeme trainiert werden können
+-	Erst durch Trainingsmethoden und Daten entstehen Fähigkeiten
+-	Lernmethoden sind für verschiedene Anwendungsfelder geeignet, aber auch unkonventionelle Ansätze bringen oft Durchbrüche
+
+
 \subsubsection{Technologien und Algorithmen}
+
+-	Bausteine aus denen KI-Systeme zusammensetzen
+-	mathematische Methoden zur Klassifizierung und Verarbeitung von Daten sowie zum Auffinden und Optimieren von Lösungen
+-	Die einzelnen Technologien oder Optimierungsmethoden können miteinander kombiniert werden und so KI-Systeme mit innovativer Funktionalität ermöglichen
 
 \subsubsection{Systeme und Architekturen}
 
+-	Kombination von oben beschriebenen KI-Technologien
+-	mit mehreren Technologien wird übergeordnete Funktion realisiert
+-	Bewährte Systeme und Architekturen können über längere Zeiträume hinweg relevant bleiben, auch wenn einzelne Komponenten ausgetauscht werden
 
 \subsection{Anwendungsbereiche}
 
-\subsubsection{Aktuell}
+wirtschaftliche relevanz, steigend
+
+\subsubsection{Aktuelle Systeme und Technologien}
+- zb SAP
 
 \subsubsection{Trendsonar der OEFIT}
 
-
+- Einschätzung durch Experten
 
 \section{Produktion}
 
