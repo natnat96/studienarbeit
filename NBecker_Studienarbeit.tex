@@ -2,6 +2,7 @@
 \usepackage[german]{babel}
 \usepackage[utf8]{inputenc}
 \setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
 
 \usepackage{acro}
 
@@ -39,83 +40,99 @@ This is the Abstract
 \printacronyms
 
 \chapter{Einleitung}
+%FAKT
+In den letzten Jahren hat die Verwendung künstliche Intelligenz (KI) in der Wirtschaft und so auch in der Produktion stark zugenommen und trägt hier unter anderem zur Optimierung von Prozessen und zur Steigerung der Effizienz bei. Durch die Anwedung von Technologien, wie z.B. maschinellem Lernen oder Computer Vision bietet KI Möglichkeiten in der Produktion Probleme in Echtzeit zu erkennen und diese zu lösen, die Qualität von Produtken zu verbessern und auch die allgemeine Produktivitätzu erhöhen. Durch die zahlreichen Durchbrüche im Forschungsfeld der KI, ergeben sich laufend neue Potententiale für die Wirtschaft. 
 
-Schon seit Jahren sind informatische Errungenschaften und Wirtschaftsbereiche wie die Produktion eng miteinander verknüpft. Längst haben die Unternehmen begriffen, dass der Einsatz von Softwarelösungen einen postiven Effekt auf die Produtivität und die Wirschaftlichkeit haben.
-Das Thema der künstlichen Intelligenz ist momentan/schon seit Jahren eines der größten Forschungsfelder in der Informatik. 
-
-RELEVANZ in der Wirtschaft von KI -> auch in der Produktion -> Immer wieder neue Erkenntnisse, viel Forschung -> Potentiale 
-
+Das Ziel dieser Arbeit ist es Potentiale von KI in der Produktion zu erarbeiten und zu bewerten. Hierfür wird zunächst ein Überblick sowohl über das Forschungsfeld und die Anwedungen der KI, als auch über den wirtschaftlichen Bereich der Produktion geschaffen. Nach der Beschreibung aktueller Beispiele von KI-Systemen in der Produktion, werden auf dieser Grundlage weitere mögliche Anwendungen aufgeführt und hinsichtlich der Wirtschaftlichkeit diskutiert.  
 
 \chapter{Stand der Technik}
 
-Das Ziel dieser Arbeit ist es, die Protentiale von künstlicher Intelligenz in der Produktion zu erarbeiten. Zur Erreichung des Ziels wird in diesem Abschnitt die Grundlagen der beiden Themengebiete, künstliche Intelligenz und Produktion eingegangen. Auch der jeweilige aktuelle Stand der Technik wird hier behandelt.
+Das Forschungsgebiet der künstlichen Intelligenz ist breit gefächert und umfangreich. Der folgende Abschnitt gibt einen Einblick in diesen Bereich der Informatik. Auch das wirtschaftliche Feld der Prodktion wird in diesem Abschnitt beleuchtet.
 
 \section{Künstliche Intelligenz}
 
 Kaum eine Technologie bietet Grundlage für mehr Utopien und Dystropien als die künstliche Intelligenz. Filme in denen KI-Roboter die Welt übernehmen, eine Wirtschaft in der durch KI kaum mehr ein Mensch arbeiten muss oder der ..., sind Beispiele dafür. Was KI derzeit wirklich kann und in welchen Gebieten geforscht wird, wird in den kommenden Unterkapiteln aufgeführt.
-Künstliche Intelligenz (engl. Artificial Intelligence oder AI) ist ein Forschungzweig der Informatik und beschreibt eher einen Sammelbegriff als konkrete Disziplin oder Technologien. Grob geht es hier um technische Systeme, die selbstständig Lösungen für Probleme finden oder Entscheidungen treffen können. \cite{01} %\cite{10}
-
-Dieses Kapitel der Arbeit klärt den Begriff der künstlichen Intelligenz und beschreibt relevante Ansätze und Technologien aus diesem Forschungsfeld. Anschließend werden aktuelle Anwendungsbereiche behandelt. Mögliche Zukunftsentwicklungen werden unter Zurhilfenahme des Trendsonars des Kompetenzzentrums Öffentliche IT (ÖFIT) aus dem Jahr 2018 zusammengefasst und bewertet. 
 
 \subsection{Grundlagen}
 
-Der Begriff sowie auch die Definition der künstlichen Intelligenz ist in der Literatur uneindeutig. Schon für die Intelligenz an sich existiert keine allgemeingültige Definition und nur umstrittene Methoden zur Messung dieser. Über die letzten Jahrzehnte hat sich sowohl die Beschreibung des Forschungsgebietes, als auch dessen Zielsetzung immer wieder gewandelt. Ihren Ursprung fand die künstliche Intelligenz im Jahr 1955 mit der ersten Defintion von John McCarthy:
+Künstliche Intelligenz (engl. Artificial Intelligence oder AI) ist ein Forschungzweig der Informatik und beschreibt eher einen Sammelbegriff als konkrete Disziplin oder Technologien. Grob geht es hier um technische Systeme, die selbstständig Lösungen für Probleme finden oder Entscheidungen treffen können. \cite{01} %\cite{10}
+
+Die Definition der künstlichen Intelligenz ist in der Literatur uneindeutig. Schon für den Begriff der Intelligenz existiert keine allgemeingültige Definition und nur umstrittene Methoden zur Messung dieser. Über die letzten Jahrzehnte hat sich sowohl der Schwerpunkt des Forschungsgebietes, als auch dessen Zielsetzung immer wieder gewandelt. Ihren Ursprung fand die künstliche Intelligenz im Jahr 1955 mit der ersten Beschreibung durch John McCarthy:
 \begin{quote}
   Ziel der KI ist es, Maschinen zu entwickeln, die sich verhalten, als verfügten sie über Intelligenz.
 \end{quote}
- Mit der Schwierigkeit Intelligenz zu definieren, verliert diese Definition an Aussagenkraft. Eine weitere Definition von Elaine Rich 1983 beschreibt KI wie folgt: 
+ Mit der Schwierigkeit die Intelligenz an sich zu definieren, verliert diese Erklärung an Aussagenkraft. Elaine Rich bitet im Jahr 1983 eine weitere Möglichleit den Gegenstand der KI-Forschung zu benennen: 
  \begin{quote}
   Artificial Intelligence is the study of how to make computers do things at which, at the moment, humans are better.
  \end{quote} 
- Damit schafft Rich eine Beschreibung, die sowohl in der Vergangenheit, als auch in der Zukunft Anwendung findet. Beispielsweise sind Menschen bei Erkennen von Objekten, Menschen oder auch den Maschinen noch weit überlegen. Bild- und Spracherkennung sind wichtige Forschungsbereiche der KI.  Ein zentrales Gebiet der Forschung ist demnach auch das maschinelle Lernen, denn vorallem die Lernfähigkeit des Mensch durch Adaptivität stellt sich für Computer als Herausforderung dar.Dahingegen ist die Entwicklung von Schachcomputern nicht mehr relevant, denn diese sind bereits besser als der Mensch. Dennoch geht es bei KI nicht nur um pragmatische praktische Implementierungen intelligenter Verfahren. Ein Teil des Forschungsgebietes ist es auch ein Verständnis für das menschliche Handeln und Schließen, bespielsweise in der Kognitionswissenschaft.
+ Damit schafft Rich eine Beschreibung, die sowohl in der Vergangenheit, als auch in der Zukunft Anwendung findet. Beispielsweise sind Menschen bei Erkennen von Objekten, Menschen oder Sprachen den Maschinen noch weit überlegen. Bild- und Spracherkennung sind wichtige Forschungsbereiche der KI. Ein zentrales Gebiet der Forschung ist demnach auch das maschinelle Lernen, denn vorallem die Lernfähigkeit des Menschen durch Adaptivität stellt sich für Computer als Herausforderung dar.Dahingegen ist die Entwicklung von Schachcomputern nicht mehr relevant, denn diese sind bereits besser als der Mensch. Dennoch geht es bei KI nicht nur um praktische Implementierungen intelligenter Verfahren. Ein Teil des Forschungsgebietes befasst sich auch mit dem Verständnis des menschlichen Handelns und Schließens (Kognitionswissenschaft).
  %\cite{11}
 
-Der Forschungsgegenstand und die Ziele der KI haben sich seit der ihren Anfängen geändert. Während früher ausschließlich an Univerisäten mit Zielen wie der Entwicklung eines Schachcomputers, der dem Mensch überlegen ist, geforscht wurde, stehen heutzutage kommerzielle Anwendungen im Vordergrund. 
-Gerade weil KI mittlerweile eine große Bedeutung in der Wirtschaft hat, wird mehr Geld in die Forschung investiert. So forschen nicht nur Universitäten, sondern auch andere Forschungsinstitute und Unternehmen in vielen Bereichen der KI. Auch die Verfügbarkeit von großen Datenmengen zu Trainingszwecken, die durch Verfahren der Daten-Analyse (Big-Data) für KI genutzt werden können, tragen einen großen Teil zur Erfolgen der jüngeren Vergangenheit und Gegenwart bei. 
+Das KI-System ChatGPT des Unternehmens OpenAI beschreibt künstliche Intelligenz, also seinen eigenen Hintergrund so:
+\begin{quote}
+  Künstliche Intelligenz (KI) ist ein interdisziplinäres Gebiet, das sich mit der Entwicklung von Algorithmen und Systemen beschäftigt, die eine menschliche Intelligenz und kognititve Fähigkeiten imitieren. KI-Systeme können Aufgaben ausführen, die normalerweise nur von Menschen erledigt werden können, wie zum Beispiel das Verstehen von Sprache, das Erkennen von Gesichtern oder das Lösen komplexer Probleme.
+\end{quote}
 
-Grundsätzlich wird zwischen schwacher und starker KI unterschieden. Schwache KI... 
-Im Gegensatz dazu wird bei starker KI eine komplette Nachbildung der menschlichen Intelligenz verstanden. Diese ist nicht nur auf ein Gebiet spezialisiert ist, sondern agiert gebietsübergreifend. Das bedeutet, dass Erkenntnisse aus einem Bereich auf andere Bereiche anwenden werden können. In der aktuellen Forschung ist die Entwicklung ein starken Intelligenz jedoch nicht nicht absehbar. 
-Im Kotext dieser Arbeit und auch in weiten Teilen der Forschung und Anwendungen wird von schwacher KI gesprochen.
+Chat GPT ist ein Chatbot, der Fragestellungen und Aufforderungen des Anwenders versteht und darauf antwortet bzw. die Aufgaben ausführt. Das Wissen ist allerdings nicht sein eigenes, denn er wurde mit großen Datenmengen trainiert, um diese Fähigkeit zu erlangen. Das beutet, dass dies nicht seine eigene Defintion ist, sondern vermutlich eine Kobination aus allen Erklärungen zum Thema KI mit dem das System trainiert wurde. Auf diesen Chatbot und der zugrundeliegenden Technologie wird in einem späteren Teil der Arbeit näher eingegangen.
 
-Die meisten KI-Anwendungen sind also auf eine Aufgabe speziell ausgerichtet. 
+Der Forschungsgegenstand und die Ziele der KI haben sich seit ihren Anfängen geändert. Während früher ausschließlich an Univerisäten mit Zielen wie der Entwicklung eines Schachcomputers, der dem Mensch überlegen ist, geforscht wurde, stehen heutzutage kommerzielle Anwendungen im Vordergrund. 
+Gerade weil KI mittlerweile eine große Bedeutung in der Wirtschaft hat, wird mehr Geld in die Forschung investiert. So forschen nicht nur Universitäten, sondern auch andere Forschungsinstitute und Unternehmen in vielen Bereichen der KI. Auch die Verfügbarkeit von großen Datenmengen zu Trainingszwecken, die durch Verfahren der Daten-Analyse (Big-Data) für KI genutzt werden können, tragen einen großen Teil zu den zahlreichen Erfolgen der jüngeren Vergangenheit und Gegenwart bei. 
 
-\subsection{Verfahren und Ansätze des Froschungsfeldes der KI}
+Zur näheren Begriffsklärung wird zwischen schwacher und starker KI unterschieden. Unter schwacher KI (auch "Narrow AI" oder "Special Purpose AI")  versteht man KI-Systeme, die für einen spezifischen Zweck, bzw. zur Lösung einer definierten Problematik entwicklet wurden. Sie können also Aufgaben ausführen, die sonst nur Menschen beweltigen können, meistens sogar schneller und effizierter. Allerdings sind sie nicht imstande kognititve Fähigkeiten eines Menschen zu imitieren. So sind Sprachassistenten wie Siri und Alexa in der Lage Sprachbefehle zu verstehen und auszuführen, sie besitzen aber keine emotionale Kompetenz oder die Fähigkeit komplexe Probleme zu lösen.
+Im Gegensatz dazu wird bei starker KI eine komplette Nachbildung bzw. Imitation der menschlichen Intelligenz verstanden. Diese ist nicht nur auf ein Gebiet spezialisiert ist, sondern agiert gebietsübergreifend. Das bedeutet, diese verschieden Aufgaben ausführen könnte, für die bisher menschliche kognitive Föhrigkeiten nötig sind und dass Erkenntnisse aus einem Bereich auf andere Bereiche angewendet werden können. Damit könnten auch unbekannte Probleme durch die KI gelöst werden. Sie sind in der Lage ihre Umwelt zu verstehen und eigenständig zu lernen. In der aktuellen Forschung ist die Entwicklung ein starken KI jedoch nicht nicht absehbar und wird von manchen Experten soagr als unmöglich eingestuft. Bei der Entwicklung sollten außerdem mögliche Gefahren und ethische Aspekte berücksichtigt werden. 
+Im Kotext dieser Arbeit und auch in weiten Teilen der Forschung und Anwendung wird von schwacher KI gesprochen.
+% Abbildung schwache vs. starke KI
 
-Nicht nur die Definition auch eine Segmentierung, Kategorisierung oder Einteilung der Technologien und Ansätze des umfangreichen und höchstdynamischen Forschungsgebietes der künstlichen Intelligenz ist nicht einfach und wird unterschiedlich vorgenommen:
-%---Sieben Segmente künstlicher Intelligenz (Maschineller lernen, Robotik, Kybernetik,Expertensysteme, Verarbeitung natürlicher Sprachen, industrielle Bildverarbeitung, Spracherkennung)??( https://www.arnold-it.com/digitalisierung/kuenstliche-intelligenz-ki/)---
-%---Teilgebiete aufgeteilt in Handeln, Wahrnhemen und lernen, je 4 untergebiete (https://www.marketinginstitut.biz/blog/kuenstliche-intelligenz/) ---
-Diese Arbeit orientiert sich bei der Kategorisierung des Trendsonar des ÖFIT. Dieses unterteilt 28 Technologien und Ansätze in die folgenden drei Bereiche: Lernmethoden, Technologien und Algorithmen, sowie Systeme und Architekturen. Wobei diese Bereich nicht vollständig voneinander zu trennen sind. Im Folgenden werden die relevantesten Ansätze kurz beschrieben. 
+\subsection{Verfahren und Ansätze}
+
+Nicht nur die Definition auch eine Segmentierung, Kategorisierung oder Einteilung der Technologien und Ansätze des umfangreichen und höchstdynamischen Forschungsgebietes der künstlichen Intelligenz ist nicht einfach und wird in der Literatur unterschiedlich vorgenommen. Diese Arbeit orientiert sich grob an der Kategorisierung des Trendsonar des ÖFIT aus dem Jahr 2018. Dieses unterteilt KI in die folgenden drei Bereiche: Lernmethoden, Technologien und Algorithmen, sowie Systeme und Architekturen. %\cite{öfit}
+Diese Bereiche sind nicht vollständig voneinander zu trennen.  
 
 \subsubsection{Lernmethoden}
-Ein künstliche Intelligenz ist nicht von Beginn an intelligent. Sie muss lernen. Eines der größten Forschungsgebiete von künstlicher Intelligenz ist daher das maschinelle Lernen. Hier wird das technische System mit Daten trainiert wodurch erst die Fähigkeiten der KI entstehen. Es gibt verschiedene Lernmethoden, die für unterschiedliche Anwendungen geeignet sind und genutzt werden. Dennoch bringen auch unkoventionelle Ansätze Durchbrüche in der Forschung. Folgend werden die relevantesten Methoden genannt und kurz beschrieben.
+Ein künstliche Intelligenz ist nicht von Beginn an intelligent. Sie muss lernen. Maschinelles Lernen (Machine Learning) ist eines der größten KI-Forschungsfelder. Anhand verschiedener Lernmethoden wird das technische System mit Daten trainiert wodurch erst die Fähigkeiten der KI entstehen. Die jeweilgen Ansätze sind für unterschiedliche Anwendungen geeignet. Dennoch bringen auch unkoventionelle Ansätze Durchbrüche in der Forschung. Folgend werden die relevantesten Methoden genannt und kurz beschrieben.
+
+
+\paragraph{Supervised Learning (Überwachtes Lernen )} $ $ \\ Supervised Learning ist derzeit der am weitesten verbreitete Ansatz des Machine Learnings. Dabei werden bekannte Daten, sogenannte Trainigsdaten genutzt. Diese enthalten bereits Ergebnisse zu den jeweiligen Eingaben. Der Algorithmus erhält zunächst nur die Eingaben und triftt eine Entscheidung über die Ausgabe. Anschließend vergleicht er seine Aussagen mit dem vorgegebenen Ergebnis und passt seine nächste Beurteilung entsprechend an. Der Algortihmus wird so lange trainiert, bis nahezu immer die korrekte Entscheidung getroffen wurde. Dadurch soll der Algorithmus anschließend in der Lage sein Aussagen zu neuen, unbekannten Eingaben treffen zu können.
+
+Beispielsweise werden dem Algortihmus unsortiert Bilder von Katzen und Hunden gezeigt. Er sieht während seiner Entscheidung aber nicht das jweilige Label "Katze" oder "Hund". Er entscheidet anhand des Bildes um welches der beiden Tiere es sich handelt und überprüft anschließend, ob seine Aussage korrekt war. So lernt der Algorithmus wie er Hund und Katzen untscheiden kann. Solche Algorthmien werden beispielsweise für Bilderkennungs-Systeme verwendet. 
+%Abbildung
+
+Diese Lernmethode wird gerne genutzt, da der Entwickler hier die Kontrolle über die Trainingsdaten, also den Input hat. Es ist von Anfang an klar, welches Ergbnis am Ende stehen soll. Allerdings nimmt diese Methode viel Zeit in Anspruch, da die Daten vor der Verwendung gelabelt werden müssen. Ein Problem dieser Methodik ist auch, dass der Algorithmus nur das lernt, was er mit den Inputdaten beigebracht bekommt. Wird ein Algortihmus beispielsweise nur mit Bildern von schwarzen Katzen trainiert, lernt er, dass eine Katze schwarzes Fell besitzt und wird eine weiße Katze nicht erkennen.
+
+\paragraph{Unsupervised Learning (Unüberwachtes Lernen)} $  $ \\ Beim Unsupervised Learning versucht ein künstliches neuronales Netz (siehe unten) Zusammenhänge, Ähnlichkeiten, Strukturen und Muster innerhalb einer großen Menge an Eingabedaten zu erkennen. Der Algorithmus kann so beispielsweise zur Gruppierung (Clustering) von Daten oder zur Findung von Beziehungen (Association) genutzt werden.
+
+Ein Beispiel für Clustering (K-Clustering) ist, wenn dem Algorithmus Bilder gegeben werde mit der Vorgabe, dass es sich hier um zwei (K=2) Arten von Tieren handelt: Hunde und Katzen. Der Algortihmus verucht also die Bilder über mehrere Itterationen nach Hunden und Katzen zu kategorisieren. So können in der Wirtschaft Daten genutzt werden, um z.B. Personengruppen zusammenzustellen, die für eine Marketingstrategie genutzt werden können.
+% Abbildung
+
+Associations werden genutzt, um Zusammenhänge zwischen den Daten zu finden. Ein Anwendung hierfür ist beispielsweise Amazon mit "Kunden, die diesen Artikel gekauft haben, kauften auch diesen Artikel".
+
+Auch Sprachassistenten und Chatbots funktionieren mit Unsupervised Learning. Sie lernen durch die Interaktion mit Nutzern, wodurch Alexa oder Siri immer besser die Spracheingaben des Besitzers verstehen und Chatbots immer besser kommunizieren können. Mit welchen Daten der Algorithmus gefüttert wird, beeinflusst also die Ausgaben der KI. Ein Beispiel für ein Problematik, die sich aus dieser Methode ergibt, war 2016 der KI-Chatbot "Tay" von Microsoft. Dieser hatte Zugang zu Twitter. Innhalb von 24 Stunden entwickelten sich die zunächst einfältigen Aussagen der KI hin zu, Hetze gegen Ausländer und Feministen und der Verarbeitung von Verschwörungstheorien. Es ist allerdings nicht bekannt, ob Tay absichtlich von Nutzern mit diesen Daten gefüttert wurde. 
+
+
+
+
+\paragraph{Reinforcement Learning (Bestärkendes Lernen)} $ $ \\ Das Reinforcement Learning ist die dritte Variante Algorithmen so zu trainieren, dass sie selbstständig Entscheidungen treffen können. Für diese Methoden werden allerdings keine Daten zum Lernen benötigt. Die Daten werden während des Trainigs selbst generiert und gelabelt. Der Algorithmus durchläuft dabei zahlreiche Itterationen um auf ein exaktes Ergebnis zu kommen. Es werden nur Impulse zur Unterstützung gesetzt. Ziel dieser Methode ist es, dass die KI in der Lage ist Probeleme zu lösen ohne dafür menschliches Vorwissen zu nutzen.
+....
+
+
+
 
 \paragraph{Deep Learning}
-\paragraph{Überwachtes Lernen}
-\paragraph{Unüberwachtes Lernen}
-\paragraph{Bestärkendes Lernen}
 \paragraph{Meta-Lernen}
 
 
 \subsubsection{Technologien und Algorithmen}
 KI-Systeme werden aus Bausteinen, wie Technologien und Algorithmen zusammengesetzt. Es werden beispielsweise mathematische Methoden genutzt, um Daten zu klassifizieren und zu verarbeiten oder um Lösungen für Probleme zu finden und zu optimieren. Ein KI-System ensteht also durch die Kombination verschiedener Technologien und Optimierungsmethoden, wodurch spezielle, definierte Aufgaben gelöst werden können. Dies ermöglicht außerdem innovative Funktionalitäten. Einige dieser Bausteine sind hier aufgelistet.
 
-LONG SHORT-TERM MEMORY
-GENERATIVE ADVERSARIAL NETWORKS
-SUPPORT VECTOR MACHINES
 
 \subsubsection{Systeme und Architekturen}
-Wie im oben beschrieben, entstehen KI-Systeme aus der Kombination von KI-Technologien, wodurch eine übergeordnete Funktion realisiert werden kann. Oft werden auch einzelne Komponenten der Systeme und Architekturen ausgetauscht und diese auf dem aktuellen Stand der Technik zu halten, oder um weitere Funktionalitäten zu ermöglichen. Es folgt eine kurze Beschreibung einiger Systeme und Architekturen.
+Wie im oben beschrieben, entstehen KI-Systeme aus der Kombination von KI-Technologien, wodurch eine übergeordnete Funktion realisiert werden kann. Oft werden auch einzelne Komponenten der Systeme und Architekturen ausgetauscht und diese auf dem aktuellen Stand der Technik zu halten, oder um weitere Funktionalitäten zu ermöglichen. KI-Systeme können weiter in drei Kategorien unterteilt werden, wobei auch hier andere Einordnungen möglich sind:
 
-\subsection{Anwendungsbereiche}
+%Drei Kategrien: maschinelles Lernen, Regelbasierte KI, Künstliche neuronale Netze
 
-wirtschaftliche relevanz, steigend
+\subsection{Anwendungen}
+???
 
-\subsubsection{Aktuelle Systeme und Technologien}
-- zb SAP
-
-\subsubsection{Trendsonar der OEFIT}
-
-- Einschätzung durch Experten
 
 \section{Produktion}
 
@@ -158,62 +175,44 @@ In VWL: strak aggregiert-°Arbeit, Boden und Kapital (oder nur Arbeit und Kapita
 In BWL; Abb 1.4 Produktionsfaktorsystem nach Gutenberg; menschl.Arbeit, Betriebsmittel und Werkstoffe (Seite 6 ist alles genau erklärt)
 Tab 2.1 Produktionstheorie
 
-\subsection{Produktionsplanung und -steuerung}
+\subsection{Produktionsprozess}
+
+\subsubsection{Produktionsplanung}
+- Prozess, Strategie
+
+- Materialbedarf, Kapazitätsplanung, Zeitplanung
+
+\subsubsection{Durchführung der Produktion}
+Produktionsmethode: Fertigung, Montage
+Steuerung: just in time, lean,...
+
+\subsubsection{Kontrolle und Überwachung der Produktion}
+Qualität, Lestungsmessung, Fehleranalyse, Zeit
+\subsection{Herausforderungen und Schwierigekeiten}
+
+- Engpässe
+- Lieferschwierigkeiten
+- Qualitätsprobleme
+- Kostenprobleme
 
 
-\chapter{Aktuelle Anwendungen von künstlicher Intelligenz in der Produktion}
+\chapter{Künstlicher Intelligenz in der Produktion}
 
 Nachdem im vorangehenden Kapitel die Grundlagen der künstlichen Intelligenz, wie auch der Produktion geklärt wurden, werden diese beiden Themenfelder in den kommenden zwei Abschnitten zusammengeführt. In diesem Kapitel werden aktuelle Anwedungen der künstlichen Intelligenz in der Produktion beschrieben und bewertet. Die Bewertung findet in drei/vier Kategorien statt: Wirtschaftlichkeit, Risiken und Potentiale.
 
-\paragraph{Wirtschaftlichkeit}:  Zur Betrachtung der Wirtschaftlichkeit werden der Aufwand der Implentierung der KI-Technologie in die Produktion und die laufenden Kosten grob den Ersparnissen und den kausalen Erträgen entgegengestellt. 
-\paragraph{Risiken}: Entstehen durch das Einsetzen der KI Risiken oder Nachteile für das Unternehmen, wie z.B. Imageverlust oder Gefahr für die Mitarbeiter, werden diese in der Kategorie Risiken bewertet.
-\paragraph{Potentiale}: ??? 
+\section{Potentiale?? von KI in der Produktion}
 
-Dieser Abschnitt dient auch dazu gegebenenfalls Protentiale dieser Anwedungenzu erkennen und herauszuarbeiten.
+- Erhöhung der Effizienz: Prozesse automatisieren, Produktionsleistungen überwachen und optimieren, Fehlerrate reduzieren, Effizienz und Produtivität in Produtkion erhöhen
+- Steigerung der Qualität: Qualität überwachen und verbessern, indem Fehler und defekte automatisch erkannt und korrigiert werden, Erhöhung Kundenzufriedenheit
+- Reduzierung von Kosten: Erhöhung der Effizienz/Produktivität steigern, Fehlerrate reduzieren, Verfügbarkeit der Anlage erhöhen
+- Flexibilität und Anpassungfähigkeit: Prozesse schneller und flexibler an veränderte Bedingungen anpassen, zb Änderungen der Produktionsanforderungen, dadurch eff/Prod
+- Predictive Maintantance: Zustand der Produktionsanlagenvorhersagen um Wartungsarbeiten gezielt durchzuführen, erhöht Verfügbarkeitder Anlagen und verringert Kosten für Reperaturen und Wartungsarbeiten
 
-% Hier Beispiele über zb Qualitätssicherung, Maintenace,..
+\section{Herausforderungen?}
 
-% Menschintegrierend, nutzung oder alleine KI/Roboter
+\section{Anwedungsbeispiele}
 
-% Skalierbarkeit
-
-% Analystische Anwendung, agierende Anwedungen mit Robotern
-
-%Vorgehen zur Entwicklung von KI
-
-\section{Qualitätssicherung}
-% Platinenprüfung
-
-\section{Predictive Maintantance}
-
-
-\section{Produktionsroboter}
-% Erkennt, wie Gegestand liegt und kann es aufnhmen und zum nächsten Punkt richtig einstzen
-
-
-
-\chapter{Potentiale für künstliche Intelligenz in der Produktion}
-
-Vor allem bei der künstlichen Intelligenz als wichtiges Forschungsfeld der Informatik findet ein stetiger Verbesserungsprozess der Technologien statt. Hierdurch entstehen neue Potentiale für Unternehmen diese Technologien in ihrer Produktion einzusetzen, um Kosten zu sparen
-
-% Zugänglichkeit von KI
-
-% zb Matrix über Technik in der KI und Einsatzgebiete in der Produktion -> Wo gibt es Potentiale??
-
-
-%Methodik
-
-
-
-%1. Business Case 2. Daten bereitstellen und aufbereiten  3. Modellentwicklung 4. Modellevaluierung
-
-
-\section{Energieeffizienz und Nachhaltigkeit}
-
-\section{Kollaborative Roboter}
-
-\section{Beispiel 3}
-
+\section{Potententiale}
 
 \chapter{Fazit und Ausblick}
 
