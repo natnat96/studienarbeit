@@ -8,7 +8,7 @@
 
 %\DeclareAcronym{ki}{
  % short = KI ,
-  %long  = künstliche Intelligenz
+ % long  = künstliche Intelligenz
 %}
 
 
@@ -57,14 +57,15 @@ Kaum eine Technologie bietet Grundlage für mehr Utopien und Dystopien als die k
 
 Künstliche Intelligenz (engl. Artificial Intelligence oder AI) ist ein Forschungszweig der Informatik und beschreibt eher einen Sammelbegriff als konkrete Disziplin oder Technologien. Grob geht es hier um technische Systeme, die selbstständig Lösungen für Probleme finden oder Entscheidungen treffen können. \cite{01} \cite{10}
 
+\subsubsection{Definition und Zielsetzung}
 Die Definition der künstlichen Intelligenz ist in der Literatur uneindeutig. Schon für den Begriff der Intelligenz existiert keine allgemeingültige Definition und nur umstrittene Methoden zur Messung dieser. Über die letzten Jahrzehnte hat sich sowohl der Schwerpunkt des Forschungsgebietes, als auch dessen Zielsetzung immer wieder gewandelt. Ihren Ursprung fand die künstliche Intelligenz im Jahr 1955 mit der ersten Beschreibung durch John McCarthy:
 \begin{quote}
-  Ziel der KI ist es, Maschinen zu entwickeln, die sich verhalten, als verfügten sie über Intelligenz.
+  ''Ziel der KI ist es, Maschinen zu entwickeln, die sich verhalten, als verfügten sie über Intelligenz.''
 \end{quote}
  Mit der Schwierigkeit die Intelligenz an sich zu definieren, verliert diese Erklärung an Aussagekraft. Elaine Rich bietet im Jahr 1983 eine weitere Möglichkeit den Gegenstand der KI-Forschung zu benennen: 
 
  \begin{quote}
-  Artificial Intelligence is the study of how to make computers do things at which, at the moment, humans are better.
+  ''Artificial Intelligence is the study of how to make computers do things at which, at the moment, humans are better.''
  \end{quote} 
 
  Damit schafft Rich eine Beschreibung, die sowohl in der Vergangenheit, als auch in der Zukunft Anwendung findet. Beispielsweise sind Menschen bei Erkennen von Objekten, Menschen oder Sprachen den Maschinen noch weit überlegen. Bild- und Spracherkennung sind wichtige Forschungsbereiche der KI. Ein zentrales Gebiet der Forschung ist demnach auch das maschinelle Lernen, denn vor allem die Lernfähigkeit des Menschen durch Adaptivität stellt sich für Computer als Herausforderung dar.Dahingegen ist die Entwicklung von Schachcomputern nicht mehr relevant, denn diese sind bereits besser als der Mensch. Dennoch geht es bei KI nicht nur um praktische Implementierungen intelligenter Verfahren. Ein Teil des Forschungsgebietes befasst sich auch mit dem Verständnis des menschlichen Handelns und Schließens (Kognitionswissenschaft).
@@ -72,22 +73,39 @@ Die Definition der künstlichen Intelligenz ist in der Literatur uneindeutig. Sc
 
 Das KI-System ChatGPT des Unternehmens OpenAI beschreibt künstliche Intelligenz, also seinen eigenen Hintergrund so \cite{04}:
 \begin{quote}
-  Künstliche Intelligenz (KI) ist ein interdisziplinäres Gebiet, das sich mit der Entwicklung von Algorithmen und Systemen beschäftigt, die eine menschliche Intelligenz und kognitive Fähigkeiten imitieren. KI-Systeme können Aufgaben ausführen, die normalerweise nur von Menschen erledigt werden können, wie zum Beispiel das Verstehen von Sprache, das Erkennen von Gesichtern oder das Lösen komplexer Probleme.
+  ''Künstliche Intelligenz (KI) ist ein interdisziplinäres Gebiet, das sich mit der Entwicklung von Algorithmen und Systemen beschäftigt, die eine menschliche Intelligenz und kognitive Fähigkeiten imitieren. KI-Systeme können Aufgaben ausführen, die normalerweise nur von Menschen erledigt werden können, wie zum Beispiel das Verstehen von Sprache, das Erkennen von Gesichtern oder das Lösen komplexer Probleme.''
 \end{quote}
-
+%screenshot
 ChatGPT ist ein Chatbot, der Fragestellungen und Aufforderungen des Anwenders versteht und darauf antwortet bzw. die Aufgaben ausführt. Das Wissen ist allerdings nicht sein eigenes, denn er wurde mit großen Datenmengen trainiert, um diese Fähigkeit zu erlangen. Das beutet, dass dies nicht seine eigene Definition ist, sondern vermutlich eine Kombination aus allen Erklärungen zum Thema KI mit dem das System trainiert wurde. Auf diesen Chatbot und der zugrundeliegenden Technologie wird in einem späteren Teil der Arbeit näher eingegangen.
-
-Turing-Test... (TBD)
 
 Der Forschungsgegenstand und die Ziele der KI haben sich seit ihren Anfängen geändert. Während früher ausschließlich an Universitäten mit Zielen wie der Entwicklung eines Schachcomputers, der dem Mensch überlegen ist, geforscht wurde, stehen heutzutage kommerzielle Anwendungen im Vordergrund. 
 Gerade weil KI mittlerweile eine große Bedeutung in der Wirtschaft hat, wird mehr Geld in die Forschung investiert. So forschen nicht nur Universitäten, sondern auch andere Forschungsinstitute und Unternehmen in vielen Bereichen der KI. Auch die Verfügbarkeit von großen Datenmengen zu Trainingszwecken, die durch Verfahren der Daten-Analyse (Big-Data) für KI genutzt werden können, tragen einen großen Teil zu den zahlreichen Erfolgen der jüngeren Vergangenheit und Gegenwart bei. \cite{10}
 
-Zur näheren Begriffsklärung wird zwischen schwacher und starker KI unterschieden. Unter schwacher KI (auch ''Narrow AI'' oder ''Special Purpose AI'')  versteht man KI-Systeme, die für einen spezifischen Zweck, bzw. zur Lösung einer definierten Problematik entwickelt wurden. Sie können also Aufgaben ausführen, die sonst nur Menschen bewältigen können, meistens sogar schneller und effizienter. Allerdings sind sie nicht imstande kognitive Fähigkeiten eines Menschen zu imitieren. So sind Sprachassistenten wie Siri und Alexa in der Lage Sprachbefehle zu verstehen und auszuführen, sie besitzen aber keine emotionale Kompetenz oder die Fähigkeit komplexe Probleme zu lösen. \cite{01}\cite{15}
+
+\subsubsection{Turing-Test}
+
+Doch im Grunde basiert künstliche Intelligenz auf statistischen Wahrscheinlichkeiten. Viele KI-Experten sehen den Begriff der KI allgemein als nicht zutreffend an. Denn derzeit handelt sich nicht etwa um Systeme, die mit Kreativität besitzen oder neue Ideen entwickeln. Es sind Systeme, die durch verschiedene Lernmethoden oder mit Wissen gefütterte Algorithmen, fest definierte Aufgaben erledigen. 
+
+Betrachtet man nun allerdings den Turing-Test, ist der Begriff ''Intelligenz'' keineswegs falsch.  Er wurde ... von ... entwicklt und ist seit dem ein verbreiter Test, um festzustellen, ob es sich um eine Intelligenz handelt oder nicht.
+
+(TBD)
 
 
-Im Gegensatz dazu wird bei starker KI eine komplette Nachbildung bzw. Imitation der menschlichen Intelligenz verstanden. Diese ist nicht nur auf ein Gebiet spezialisiert ist, sondern agiert gebietsübergreifend. Das bedeutet, diese verschieden Aufgaben ausführen könnte, für die bisher menschliche kognitive Fähigkeiten nötig sind und dass Erkenntnisse aus einem Bereich auf andere Bereiche angewendet werden können. Damit könnten auch unbekannte Probleme durch die KI gelöst werden. Sie sind in der Lage ihre Umwelt zu verstehen und eigenständig zu lernen. In der aktuellen Forschung ist die Entwicklung ein starken KI jedoch nicht nicht absehbar und wird von manchen Experten sogar als unmöglich eingestuft. Bei der Entwicklung sollten außerdem mögliche Gefahren und ethische Aspekte berücksichtigt werden. 
+\subsubsection{Schwache und starke KI}
+
+
+Zur näheren Begriffsklärung wird zwischen schwacher und starker KI unterschieden. Unter schwacher KI (engl. ''Narrow AI'' oder ''Special Purpose AI'')  versteht man KI-Systeme, die für einen spezifischen Zweck, bzw. zur Lösung einer definierten Problematik entwickelt wurden. Sie können also Aufgaben ausführen, die sonst nur Menschen bewältigen können, meistens sogar schneller und effizienter. Allerdings sind sie nicht imstande kognitive Fähigkeiten eines Menschen zu imitieren. So sind Sprachassistenten wie Siri und Alexa in der Lage Sprachbefehle zu verstehen und auszuführen, sie besitzen aber keine emotionale Kompetenz oder die Fähigkeit komplexe Probleme zu lösen. \cite{01}\cite{15}
+
+
+Im Gegensatz dazu wird bei starker KI (engl. General AI) eine komplette Nachbildung bzw. Imitation der menschlichen Intelligenz verstanden. Diese ist nicht nur auf ein Gebiet spezialisiert ist, sondern agiert gebietsübergreifend. Das bedeutet, diese verschieden Aufgaben ausführen könnte, für die bisher menschliche kognitive Fähigkeiten nötig sind und dass Erkenntnisse aus einem Bereich auf andere Bereiche angewendet werden können. Damit könnten auch unbekannte Probleme durch die KI gelöst werden. Sie sind in der Lage ihre Umwelt zu verstehen und eigenständig zu lernen. In der aktuellen Forschung ist die Entwicklung ein starken KI jedoch nicht nicht absehbar und wird von manchen Experten sogar als unmöglich eingestuft. Bei der Entwicklung sollten außerdem mögliche Gefahren und ethische Aspekte berücksichtigt werden. 
+
+
+Super AI
+
 Im Kontext dieser Arbeit und auch in weiten Teilen der Forschung und Anwendung wird von schwacher KI gesprochen. \cite{01}\cite{15}
 % Abbildung schwache vs. starke KI
+
+
 
 \subsection{Verfahren und Ansätze}
 
@@ -105,12 +123,12 @@ Beispielsweise werden dem Algorithmus unsortiert Bilder von Katzen und Hunden ge
 
 Diese Lernmethode wird gerne genutzt, da der Entwickler hier die Kontrolle über die Trainingsdaten, also den Input hat. Es ist von Anfang an klar, welches Ergebnis am Ende stehen soll. Allerdings nimmt diese Methode viel Zeit in Anspruch, da die Daten vor der Verwendung gelabelt werden müssen. Ein Problem dieser Methodik ist auch, dass der Algorithmus nur das lernt, was er mit den Inputdaten beigebracht bekommt. Wird ein Algorithmus beispielsweise nur mit Bildern von schwarzen Katzen trainiert, lernt er, dass eine Katze schwarzes Fell besitzt und wird eine weiße Katze nicht erkennen.
 
-\paragraph{Unsupervised Learning (Unüberwachtes Lernen)} $  $ \\ Beim Unsupervised Learning versucht ein künstliches neuronales Netz (siehe unten) Zusammenhänge, Ähnlichkeiten, Strukturen und Muster innerhalb einer großen Menge an Eingabedaten zu erkennen. Der Algorithmus kann so beispielsweise zur Gruppierung (Clustering) von Daten oder zur Findung von Beziehungen (Association) genutzt werden.\cite{01}
+\paragraph{Unsupervised Learning (Unüberwachtes Lernen)} $  $ \\ Beim Unsupervised Learning versucht ein künstliches neuronales Netz (siehe unten) Zusammenhänge, Ähnlichkeiten, Strukturen und Muster innerhalb einer großen Menge von Eingabedaten zu erkennen. Der Algorithmus kann so beispielsweise zur Gruppierung (Clustering) von Daten oder zur Findung von Beziehungen (Association) genutzt werden.\cite{01}
 
 Ein Beispiel für Clustering (K-Clustering) ist, wenn dem Algorithmus Bilder gegeben werde mit der Vorgabe, dass es sich hier um zwei (K=2) Arten von Tieren handelt: Hunde und Katzen. Der Algorithmus versucht also die Bilder über mehrere Iterationen nach Hunden und Katzen zu kategorisieren. So können in der Wirtschaft Daten genutzt werden, um z.B. Personengruppen zusammenzustellen, die für eine Marketingstrategie genutzt werden können.
 % Abbildung
 
-Associations werden genutzt, um Zusammenhänge zwischen den Daten zu finden. Ein Anwendung hierfür ist beispielsweise Amazon mit "Kunden, die diesen Artikel gekauft haben, kauften auch diesen Artikel".
+Neben dem Clustering kann diese Lernmethode auch für sog. Associations werden genutzt, um Zusammenhänge zwischen den Daten zu finden. Ein Anwendung hierfür ist beispielsweise Amazon mit "Kunden, die diesen Artikel gekauft haben, kauften auch diesen Artikel".
 
 Auch Sprachassistenten und Chatbots funktionieren mit Unsupervised Learning. Sie lernen durch die Interaktion mit Nutzern, wodurch Alexa oder Siri immer besser die Spracheingaben des Besitzers verstehen und Chatbots immer besser kommunizieren können. Mit welchen Daten der Algorithmus gefüttert wird, beeinflusst also die Ausgaben der KI. Ein Beispiel für ein Problematik, die sich aus dieser Methode ergibt, war 2016 der KI-Chatbot "Tay" von Microsoft. Dieser hatte Zugang zu Twitter. Innerhalb von 24 Stunden entwickelten sich die zunächst einfältigen Aussagen der KI hin zu, Hetze gegen Ausländer und Feministen und der Verarbeitung von Verschwörungstheorien. Es ist allerdings nicht bekannt, ob Tay absichtlich von Nutzern mit diesen Daten gefüttert wurde. 
 
