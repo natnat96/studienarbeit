@@ -96,9 +96,6 @@ ChatGPT ist ein Chatbot, der Fragestellungen und Aufforderungen des Anwenders ve
 Der Forschungsgegenstand und die Ziele der KI haben sich seit ihren Anfängen geändert. Während früher ausschließlich an Universitäten mit Zielen wie der Entwicklung eines Schachcomputers, der dem Mensch überlegen ist, geforscht wurde, stehen heutzutage kommerzielle Anwendungen im Vordergrund. 
 Gerade weil KI mittlerweile eine große Bedeutung in der Wirtschaft hat, wird mehr Geld in die Forschung investiert. So forschen nicht nur Universitäten, sondern auch andere Forschungsinstitute und Unternehmen in vielen Bereichen der KI. Auch die Verfügbarkeit von großen Datenmengen zu Trainingszwecken, die durch Verfahren der Daten-Analyse (Big-Data) für KI genutzt werden können, tragen einen großen Teil zu den zahlreichen Erfolgen der jüngeren Vergangenheit und Gegenwart bei. \cite{10}
 
-
-
-
 \subsubsection{Turing-Test}
 
 Doch im Grunde basiert künstliche Intelligenz auf statistischen Wahrscheinlichkeiten. Viele KI-Experten sehen den Begriff der KI allgemein als nicht zutreffend an. Denn derzeit handelt sich nicht etwa um Systeme, die mit Kreativität besitzen oder neue Ideen entwickeln. Es sind Systeme, die durch verschiedene Lernmethoden oder mit Wissen gefütterte Algorithmen, fest definierte Aufgaben erledigen. 
@@ -106,7 +103,6 @@ Doch im Grunde basiert künstliche Intelligenz auf statistischen Wahrscheinlichk
 Betrachtet man nun allerdings den Turing-Test, ist der Begriff ''Intelligenz'' keineswegs falsch.  Er wurde 1950 vom britischen Mathematiker und Informatiker Alan Mathison Turing entwickelt und ist seitdem ein überwiegend anerkannter Test, um festzustellen, ob eine Maschine intelligent ist oder nicht.
 Dabei führt ein Mensch eine schriftliche Unterhaltung, ohne es zu wissen mit einer Maschine. Hier spielen weder Mimik, Gestik noch Tonalität eine Rolle. Damit die Maschine den Test besteht müssten 30 Teilnehmer nach jeweils einem 5-mintütigen Chatgespräch nicht beurteilen können, ob es sich es sich bei dem Chat-Partner um einen Menschen oder eine Maschine gehandelt hat. Die Frage nach einem Bewusstsein wird dabei nicht geprüft. Erst 2014 bestand erstmals eine Maschine den Test. \newline
 Doch es gibt Kritik am Turing-Test. Davon abgesehen, dass nicht jede KI an diesem Test teilnehmen könnte, weil das Verstehen und Interpretieren von Sprache ein spezielles Feld der KI-Forschung ist, muss sich der Computer dümmer stellen als er eigentlich ist, um zu bestehen. Würde der Mensch nach der Einwohnerzahl Mannheims fragen und der Computer würde antworten ''am 31.12.2021 hatte Mannheim 311.831 Einwohner'' würde er sofort als Maschine identifiziert werden. Um den Test zu bestehen, muss sich der Computer also anpassen und taktisch verhalten. Allerdings besteht hier die Frage, ob ein solche gezielte Täuschung das Vertrauen in KI mindert. \cite{02}
-
 
 \subsubsection{Schwache und starke KI}
 
@@ -125,25 +121,24 @@ Im Gegensatz dazu wird bei starker KI (engl. General AI) eine komplette Nachbild
 
 Im Kontext dieser Arbeit und auch in weiten Teilen der Forschung und Anwendung wird von schwacher KI gesprochen. \cite{01}\cite{15}
 
-
-
-
-
 \subsection{Maschinelles Lernen}
 
 Eine künstliche Intelligenz ist nicht von Beginn an intelligent. Sie muss lernen. Maschinelles Lernen (Machine Learning) ist eines der größten KI-Forschungsfelder. Anhand verschiedener Lernmethoden wird das technische System mit Daten trainiert, wodurch erst die Fähigkeiten der KI entstehen. Die jeweiligen Ansätze sind für unterschiedliche Anwendungen geeignet. Dennoch bringen auch unkonventionelle Ansätze Durchbrüche in der Forschung. \newline
 
 Folgend werden die relevantesten Methoden genannt und kurz beschrieben. \cite{10}
 
+\subsubsection{Supervised Learning (Überwachtes Lernen)} 
 
-\paragraph{Supervised Learning (Überwachtes Lernen)} $ $ \\ Supervised Learning ist derzeit der am weitesten verbreitete Ansatz des Machine Learnings. Dabei werden bekannte Daten, sogenannte Trainingsdaten genutzt. Diese enthalten bereits Ergebnisse zu den jeweiligen Eingaben. Der Algorithmus erhält zunächst nur die Eingaben und trifft eine Entscheidung über die Ausgabe. Anschließend vergleicht er seine Aussagen mit dem vorgegebenen Ergebnis und passt seine nächste Beurteilung entsprechend an. Der Algorithmus wird so lange trainiert, bis nahezu immer die korrekte Entscheidung getroffen wurde. Dadurch soll der Algorithmus anschließend in der Lage sein Aussagen zu neuen, unbekannten Eingaben treffen zu können.\cite{01}\cite{05}
+Supervised Learning ist derzeit der am weitesten verbreitete Ansatz des Machine Learnings. Dabei werden bekannte Daten, sogenannte Trainingsdaten genutzt. Diese enthalten bereits Ergebnisse zu den jeweiligen Eingaben. Der Algorithmus erhält zunächst nur die Eingaben und trifft eine Entscheidung über die Ausgabe. Anschließend vergleicht er seine Aussagen mit dem vorgegebenen Ergebnis und passt seine nächste Beurteilung entsprechend an. Der Algorithmus wird so lange trainiert, bis nahezu immer die korrekte Entscheidung getroffen wurde. Dadurch soll der Algorithmus anschließend in der Lage sein Aussagen zu neuen, unbekannten Eingaben treffen zu können.\cite{01}\cite{05}
 
 Beispielsweise werden dem Algorithmus unsortiert Bilder von Katzen und Hunden gezeigt. Er sieht während seiner Entscheidung aber nicht das jeweilige Label "Katze'' oder "Hund". Er entscheidet anhand des Bildes, um welches der beiden Tiere es sich handelt und überprüft anschließend, ob seine Aussage korrekt war. So lernt der Algorithmus wie er Hund und Katzen unterscheiden kann. Solche Algorithmen werden beispielsweise für Bilderkennungs-Systeme verwendet. 
 %Abbildung
 
 Diese Lernmethode wird gerne genutzt, da der Entwickler hier die Kontrolle über die Trainingsdaten, also den Input hat. Es ist von Anfang an klar, welches Ergebnis am Ende stehen soll. Allerdings nimmt diese Methode viel Zeit in Anspruch, da die Daten vor der Verwendung gelabelt werden müssen. Ein Problem dieser Methodik ist auch, dass der Algorithmus nur das lernt, was er mit den Inputdaten beigebracht bekommt. Wird ein Algorithmus beispielsweise nur mit Bildern von schwarzen Katzen trainiert, lernt er, dass eine Katze schwarzes Fell besitzt, und wird wahrscheinlich eine weiße Katze nicht erkennen.
 
-\paragraph{Unsupervised Learning (Unüberwachtes Lernen)} $  $ \\ Beim Unsupervised Learning versucht ein künstliches neuronales Netz (siehe unten) Zusammenhänge, Ähnlichkeiten, Strukturen und Muster innerhalb einer großen Menge von Eingabedaten zu erkennen. Der Algorithmus kann so beispielsweise zur Gruppierung (Clustering) von Daten oder zur Findung von Beziehungen (Association) genutzt werden.\cite{01}
+\subsubsection{Unsupervised Learning (Unüberwachtes Lernen)} 
+
+Beim Unsupervised Learning versucht ein künstliches neuronales Netz (siehe unten) Zusammenhänge, Ähnlichkeiten, Strukturen und Muster innerhalb einer großen Menge von Eingabedaten zu erkennen. Der Algorithmus kann so beispielsweise zur Gruppierung (Clustering) von Daten oder zur Findung von Beziehungen (Association) genutzt werden.\cite{01}
 
 Ein Beispiel für Clustering (K-Clustering) ist Folgendes: Dem Algorithmus werden Bilder gegeben mit der Vorgabe, dass es sich hier um zwei (K=2) Arten von Tieren handelt: Hunde und Katzen. Der Algorithmus versucht also die Bilder über mehrere Iterationen hinweg nach Hunden und Katzen zu kategorisieren. So können in der Wirtschaft Daten genutzt werden, um z.B. Personengruppen zusammenzustellen, die für eine Marketingstrategie genutzt werden können.
 % Abbildung
@@ -152,17 +147,15 @@ Neben dem Clustering kann diese Lernmethode auch für sog. Associations werden g
 
 Auch Sprachassistenten und Chatbots funktionieren mit Unsupervised Learning. Sie lernen durch die Interaktion mit Nutzern, wodurch Alexa oder Siri die Spracheingaben des Besitzers immer besser verstehen und kommunizieren können. Mit welchen Daten der Algorithmus gefüttert wird, beeinflusst also die Ausgaben der KI. Ein Beispiel für ein Problematik, die sich aus dieser Methode ergibt, war 2016 der KI-Chatbot "Tay" von Microsoft. Dieser hatte Zugang zu Twitter. Innerhalb von 24 Stunden entwickelten sich die zunächst einfältigen Aussagen der KI hin zu, Hetze gegen Ausländer und Feministen und der Verarbeitung von Verschwörungstheorien. Es ist allerdings nicht bekannt, ob Tay absichtlich von Nutzern mit diesen Daten gefüttert wurde. %Quelle
 
-\paragraph{Reinforcement Learning (Bestärkendes Lernen)} $ $ \\ Das Reinforcement Learning ist die dritte Variante Algorithmen so zu trainieren. Für diese Methoden werden allerdings keine Daten zum Lernen benötigt, es werden durch Ausprobieren gelabelte Daten erzeugt. \cite{17} \newline
+\subsubsection{Reinforcement Learning (Bestärkendes Lernen)} 
+
+Das Reinforcement Learning ist die dritte Variante Algorithmen so zu trainieren. Für diese Methoden werden allerdings keine Daten zum Lernen benötigt, es werden durch Ausprobieren gelabelte Daten erzeugt. \cite{17} \newline
 Die Lernmethode simuliert den Lernvorgang bei Kindern. Diesen werden statt Anleitungen und Nachahmungsmuster, eher Regeln beigebracht. Anschließend soll sie dann aus eigenen Erfahrungen lernen. Mit positiver und negativer Verstärkung tritt der Lerneffekt ein. Das Kind kann dann auch zuvor unbekannte und kreative Lösungen finden.
 Beim Reinforcement Learning werden also nur (Spiel-)Regeln vorgegeben. Es werden keine Lerndaten oder erwartete Ergebnisse benötigt. Durch Belohnungssignale bei richtigen Entscheidungen verbessert sich die KI in einer Simulationsumgebung anhand des Versuch-Fehler-Prinzips (Trail and Error) dann schrittweise. Die bietet nicht nur den Vorteil, dass keine großen Mengen an Lerndaten vorbereitet und zu Verfügung gestellt werden müssen, sondern auch, dass komplexe Probleme so ohne menschliches Vorwissen gelöst werden können.%\cite{02}
 \newline
 %Beispiel Auto einparken
 Diese Lernmethode wurde auch für die Entwicklung der Spielsoftware AlphaGo Zero verwendet. Nur mit der Kenntnis der Spielregeln und durch Spielen gegen sich selbst, gelang es dem Computer eine große Spielstärke zu entwickeln. Außerdem nutzte er bislang unbekannte Spielzüge und -varianten. Mögliche Belohnungssignale für AlphaGo Zero wären ''Spiel gewonnen" oder z.B. '' möglichst große Anzahl verbleibender eigener Spielsteine am Ende der Partie.
 \cite{02}
-
-
-%\subsection{Technologien und KI-Systeme}
-%KI-Systeme werden aus Bausteinen, wie Technologien und Algorithmen zusammengesetzt. Es werden beispielsweise mathematische Methoden genutzt, um Daten zu klassifizieren und zu verarbeiten oder um Lösungen für Probleme zu finden und zu optimieren. Ein KI-System entsteht also durch die Kombination verschiedener Technologien und Optimierungsmethoden, wodurch spezielle, definierte Aufgaben gelöst werden können. Dies ermöglicht außerdem innovative Funktionalitäten. Einige dieser Bausteine sind hier aufgelistet. 
 
 \subsection{Künstliche Neuronale Netze}
 %\paragraph{Neuronale Netze}
@@ -183,45 +176,46 @@ Bei Künstliche neuronale Netze sind die Neuronen in sog. Schichten (engl. Layer
   \caption[Aufbau eines neuronalen Netzes]{Aufbau eines neuronalen Netzes \cite{17}}
 \end{figure}
 
-Die Neuronen bekommen jeweils Eingaben von den Neuronen der vorherigen Schicht und geben dann je nach ausgelöster Aktivität eine Ausgabe an die nächste Schicht weiter. Das Trainieren eines solchen künstlichen neuronalen Netzwerkes wird als Deep Learning bezeichnet und stellt heutzutage den Standard-Anwendungsfall dar. Deep Learning wird in den Bereichen des maschinellen Lernens angewendet und würde sich in Abbildung 2.6 als Teilmenge dieses Gebietes wiederfinden. Dabei werden wie im menschlichen Hirn die Verbindungen zwischen den Neuronen je nach Gelerntem entweder gestärkt oder geschwächt. Mathematisch ausdrückt ändert sich die Gewichtung der Kanten (Verbindungen). So werden über viele verdeckte Schichten hinweg komplexe Datenzusammenhänge entwickelt.\cite{17}
+Die Neuronen bekommen jeweils Eingaben von den Neuronen der vorherigen Schicht und geben dann eine gewichtete Ausgabe an die nächste Schicht weiter. Je mehr Gewicht eine Verbindung zwischen Neuronen enthält, desto intensiver ist hier der Informationsfluss. Dieses Prinzip wird als Deep Learning bezeichnet und stellt heutzutage den Standard-Anwendungsfall dar. Deep Learning wird in den Bereichen des maschinellen Lernens angewendet und würde sich in Abbildung 2.6 als Teilmenge dieses Gebietes wiederfinden. Dabei werden wie im menschlichen Hirn die Verbindungen zwischen den Neuronen je nach Gelerntem entweder gestärkt oder geschwächt. So werden über viele verdeckte Schichten und Lerniterationen hinweg komplexe Datenzusammenhänge entwickelt.\cite{17}
 
 %Beispiel???  
 
 Durch verschiedene Arten von neuronalen Netzen können verschiedene Probleme gelöst werden. So werden beispielsweise Konvolutionale Neuronale Netze (CNNs) beispielsweise für Verarbeitung von Bildern und Videos verwendet und Generative Adversarial Networks (GANs) zur Generierung von authentischen künstlichen Daten, wie künstliche Bilder oder Stimmen. Dies nur nur zwei Beispiele von Vielen.
 
-Problematisch ist die sog. Black Box. Die verdeckten Schichten tragen diesen Namen, weil man nicht nachvollziehen kann was wirklich in ihnen passiert. Der Mensch kann also nicht erkennen warum die KI am Ende die jeweilige Entscheidung getroffen hat. Ein Beispiel für diese Problematik beschreibt Prof. Ulrich Walter von der TU München bei einem Vortrag über künstliche Intelligenz im deutschen Museum am 19.10.2022: Eine KI wurde durch Deep Learning darauf trainiert Schiffe zu erkennen. Dies hat das System auch sehr gut geschafft. Bei Betrachtung der sog. Heat-Map, die anzeigt aus welchen Bereichen der Bilder die KI schließen konnte, dass es sich um ein Schiff handelt, wurde klar, dass sie nicht das Schiff sondern das Wasser erkannte. Daraus lässt sich schließen, dass der Algorithmus nur mit Bildern von Schiffen auf dem Wasser trainiert wurde. Sie erkennt also das Wasser als Schiff.
+Problematisch ist die sog. Black Box. Die verdeckten Schichten tragen diesen Namen, weil man nicht nachvollziehen kann was wirklich in ihnen passiert. Der Mensch kann also nicht erkennen warum die KI am Ende die jeweilige Entscheidung getroffen hat. Ein Beispiel für diese Problematik beschreibt Prof. Ulrich Walter von der TU München bei einem Vortrag über künstliche Intelligenz im deutschen Museum am 19.10.2022: Eine KI wurde durch Deep Learning darauf trainiert Schiffe zu erkennen. Dies hat das System auch sehr gut geschafft. Bei Betrachtung der sog. Heat-Map, die anzeigt aus welchen Bereichen der Bilder die KI schließen konnte, dass es sich um ein Schiff handelt, wurde klar, dass sie nicht das Schiff sondern das Wasser erkannte. Daraus lässt sich schließen, dass der Algorithmus nur mit Bildern von Schiffen auf dem Wasser trainiert wurde. Sie erkennt also das Wasser als Schiff. \cite{16}
 
 \begin{figure}[H]
   \center
  \includegraphics[width=14cm]{images/Schiff-HeatMap.png}
-  \caption[Heat Map zur Erkennung eines Schiffes]{Heat Map zur Erkennung eines Schiffes (Screenshot aus Übertagung des Vortrages \cite{16})}
+  \caption[Heat Map zur Erkennung eines Schiffes]{Heat Map zur Erkennung eines Schiffes (Übernommen aus Vortrag \cite{16})}
 \end{figure}
 
 Ähnliches ist auch beim Trainieren einer KI auf die Erkennung von Pferden in Bildern passiert. Hier wurde der Algorithmus wohl überwiegend mit Bildern trainiert, die Worte wie ''Pferd'' beinhalteten.
 
 \begin{figure}[H]
   \center
- \includegraphics[width=14cm]{images/Pferd-HeatMap.png}
-  \caption[Heat Map zur Erkennung eines Schiffes]{Heat Map zur Erkennung eines Schiffes (Screenshot aus Übertagung des Vortrages \cite{16})}
+ \includegraphics[width=10cm]{images/Pferd-HeatMap.png}
+  \caption[Heat Map zur Erkennung eines Pferdes]{Heat Map zur Erkennung eines Pferdes(Übernommen aus Vortrag \cite{16})}
 \end{figure}
 
 Zusammenfassend lässt sich sagen, dass neuronale Netze bzw. Deep-Learning-Netze in den letzten Jahren Durchbrüche in zahlreihe Bereichen erzielt hat. Darunter zählen unter anderem das Treffen von Voraussagen, das automatische Erkennen von Objekten auf Bildern und das Verstehen und Verfassen von Texten. Die Qualität eines neuronalen Netzes hängt dabei stark von den verwendeten Lerndaten, bzw. den vorgegebenen Regeln (bei Reinforcement Learning) ab. 
 
 \subsection{Weitere Technologien und Anwendungen}
 
-\paragraph{Regelbasierte und Experten-Systeme}
+\subsubsection{Regelbasierte und Experten-Systeme}
+
 Neben den lernenden KI-Systemen, die mit großen Mengen an Daten trainiert werden, gibt es auch regelbasierte Systeme. Der Mensch gibt hier einfach gesagt durch If-Then-Beziehungen oder einen Entscheidungsbaum feste Regeln vor anhand das Systeme Entscheidungen treffen soll. Eines dieser Systeme ist das sog. Expertensystem. Der Experte gibt dem Algorithmus sein Expertenwissen über die spezielle Aufgabe bzw. die Problematik. Das System kann dann automatisiert Entscheidungen treffen anhand von Kriterien, die er nicht selbst gelernt hat, sondern die ihm vorgegeben wurden. Diese Systeme sind in der Regel leichter zu implementieren, sie werden allerdings schnell sehr komplex und unübersichtlich.
 Anwendung findet regelbasierte KI-Systeme vor allem in Bereichen, in denen ein hohes Maß an Zuverlässigkeit und Sicherheit erforderlich ist und Entscheidungen des Systems einfach vom Experten überprüfbar sind. 
 Ein Anwendungsbeispiel wäre ein medizinisches Diagnose-System, das anhand von Untersuchungsresultaten und Symptomen bestimmte Krankheiten diagnostiziert.
 
-\paragraph{Computer Vision}
+\subsubsection{Computer Vision} 
 
 Der Forschungsbereich Computer Vision (computerbasiertes Sehen) beschäftigt sich mit der Verarbeitung und Analyse von visuellen Daten, sowohl Bilder als auch Videos. Ziel ist es, dass der Computer die Inhalte des Bildes erkennt und versteht. Im industriellen Umfeld werden oft auch von Machine Vision (Maschinelles Sehen) gesprochen. 
 Durch spezielle Algorithmen und mathematische Modelle versucht der Computer einem Bild geometrische Formen, Kanten und zusammenhängende Bildbereiche zu identifizieren. In einem nächsten Schritt können so auch ganze Objekte erkannt werden. 
 Computer Vision findet Anwendung beispielsweise im Erkennen von Gesichtern, Identifizierung von kranken Geweben, oder auch beim autonomen Fahren. Aber auch im klassischen industriellen Umfeld ist Computer Vision eine weit verbreitete Technologie.
 
 
-\paragraph{Natürliche Sprachverarbeitung}
+\subsubsection{Natürliche Sprachverarbeitung}  
  
 Ein weiterer Bereich der KI-Forschung ist die natürliche Sprachverarbeitung (engl. Natural Language Processing, NLP) oder auch Computerlinguistik (CL). Anstatt wie bei Computer Vision Bilder oder Videos zu verarbeiten, fokussiert sich NLP auf das Erkennen und Verstehen von Sprache und Texten. Verwendete Daten werden sowohl in schriftlicher Form als auch als Audio-Dateien verwendet. Der Bereich gliedert sich in die zwei Bereiche Natural Language Unterstanding (NLU), also das Verstehen von Sprache und Natural Language Generation (NLG), dem Generieren von Sprache. \newline
 Anwendungen von NLP sind beispielsweise Text-to-Speech- und Speech-to-Text-Systeme, maschinelle Übersetzung von Sprache, Sprach- bzw. Stimmerkennung und Textgenerierung. 
@@ -236,14 +230,12 @@ Allerdings muss beachtet werden, dass diese Technologie nur so schlau ist, wie d
 
 In diesem Beispiel sagt ChatGPT, dass er die Antwort nicht weiß. doch in anderen Fällen ist sein Unwissen weder zu erkennen, noch sagt er, dass er sich bei der Antwort nicht sicher ist. Bei der Frage nach Medizintechnik-Firmen in Augsburg listet werden fünf Firmen aufgelistet, wobei keine davon wirklich in Augsburg existiert.
 
-\paragraph{Robotik}
+\subsubsection{Robotik} 
 
-
-
-
-
-
-
+Wenn in den Medien von künstlicher Intelligenz die Rede ist, werden häufig Roboter gezeigt. Allerdings ist KI nur ein Teil der Robotik. Trotzdem stellt große Teile der Robotik Untergebiete der KI-Forschung dar. Außerdem hat die Robotik und vor allem als Teil der KI einen hohen Stellenwert in der heutigen Industrie.
+Roboter bestehen zu großen Teilen aus Hardware, wie mechatronische Komponenten, Sensoren und Aktoren. Sie sind nicht per se lernfähig oder besitzen künstliche Intelligenz. Roboter sind programmierbare Maschinen, die selbstständig definierte Aufgaben verrichten. Die Unterscheidung zu Computern und anderen Maschinen ist die frei beweglichen Achsen, wodurch der Roboter die Fähigkeit bekommt Bewegungen auszuführen. Dabei gibt es einfache Verrichtungsroboter und welche, die zusätzlich mit künstlicher Intelligenz ausgestattet sind. 
+Eine KI-Technologien die häufig in der Robotik verwendet wird, ist Computer Vision. So kann der Roboter seine Umwelt bzw. seinen Arbeitsbereich wahrnehmen und auf Grundlage dessen Entscheidungen treffen. Ein Beispiel wäre ein Greifarm, der ein Bauteil abhängig von dessen aktuellen Lage greifen kann, um es dann durch Rotation an der vorgesehenen Stelle anzubringen.
+Allgemein werden Roboter in Kombination mit KI in automatisierte Fabriken, der Medizin, aber auch in der Pflege und Bildung eingesetzt. \cite{19}
 
 
 \section{Produktion}
@@ -252,26 +244,63 @@ Die Produktion ist eine der Grundfunktionen eines Unternehmens und ist verantwor
 
 \subsection{Grundlagen und Ziele der Produktion}
 
-In der Produktion werden durch den gelenkten Einsatz von Produktionsfaktoren Güter oder Dienstleistungen hergestellt. \cite{12}
+Erich Gutenberg (1897-1984) gilt in Deutschland als Gründer der modernen Betriebswirtschaftslehre gilt. Er definierte die Produktion in Band 1 seiner Buchreihe \textit{Grundlagen der Betriebswirtschaftslehre} wie folgt:
 
-\begin{figure}[H]
+\begin{quote}
+ ''Eine Leistungserstellung, die außer Arbeitsleistungen und Betriebsmitteln auch den Faktor Werkstoffe enthält, bezeichnen wir als 'Produktion'.'' \cite{20}
+\end{quote}
+
+Damit beschreibt er die Produktionsfaktoren in der Betriebswirtschaftslehre: menschliche Arbeit (inklusive Faktoren wie Arbeitsbedingungen oder -entgelt), Betriebsmittel (z.B. Maschinen, Werkzeuge und Gebäude) und Werkstoffe (Rohstoffe, Hilfsstoffe und Betriebsstoffe). Diese werden auch als Elementarfaktoren bezeichnet. Dispositive Faktoren sind hingegen beispielsweise die Betriebsführung und das Wissen im Unternehmen. Generell umfasst der Begriff der Produktionsfaktoren alles was zur Leistungserstellung und zur Aufrechterhaltung und Ausbau der Leistungsbereitschaft dient. \cite{06}
+
+\begin{figure}%[H]
   \center
- \includegraphics[width=14cm]{images/Kombinationsprozess.png}
-  \caption[Kombinationsprozess der Produktion]{Kombinationsprozess der Produktion; leicht abgewandelt übernommen von \cite{13} }
+  \includegraphics[width=12cm]{images/Elementarfaktoren.pptx.png}
+  \caption[Elementarfaktoren]{Elementarfaktoren (eigene Darstellung)}
 \end{figure}
 
-Der Begriff der Produktionsfaktoren umfasst dabei alles was zur Leistungserstellung und zur Aufrechterhaltung und Ausbau der Leistungsbereitschaft dient. In der Volkswirtschaftslehre bestehen dieser Faktoren aus Arbeit, Boden und Kapital. Dahingegen spricht die Betriebswirtschaftslehre von menschlicher Arbeit, Betriebsmittel und Werkstoffen (Produktionsfaktorsystem nach Gutenberg)
+\begin{figure}%[H]
+  \center
+  \includegraphics[width=12cm]{images/Kombinationsprozess.png}
+  \caption[Kombinationsprozess der Produktion]{Kombinationsprozess der Produktion; übernommen von \cite{07} }
+\end{figure}
 
-In der Wirtschaft lassen sich Ziele beispielsweise in monetäre und nicht monetäre Ziele unterteilen. Wobei sich monetäre Ziele unter anderem mit Kennzahlen wie Gewinn, Umsatz und Kostenminimierung beschreiben lassen und nicht-monetäre Ziele mit Produktivität, Qualität der Produkte und Kundenzufriedenheit. Auf all diese Ziele hat die Produktion einen großen Einfluss oder sind maßgeblich an der Erreichung beteiligt.
+Durch den gelenkten Einsatz der Produktionsfaktoren werden also Güter oder Dienstleistungen hergestellt. Diese sind je nach Fertigungsgrade beispielsweise Halbfabrikate, Zwischenprodukte oder Endprodukte.\cite{12}
+Die Produktion lässt sich durch die sog. Produktionsfunktion als funktionalen Zusammenhang zwischen der Ausbringungsmenge (engl. Output) und der eingesetzten Produktionsfaktoren (engl. Input) bei gleichbleibender Produktionstechnologie beschreiben. \cite{20}
 
-Übergeordnet werden in dieser Arbeit die Zielgrößen der Wirtschaftlichkeit und der Produktivität betrachtet. Die Wirtschaftlichkeit misst das Verhältnis zwischen Aufwand und Ertrag. Im Aufwand spiegeln sich die Kosten der Produktion und im Ertrag die Ansatzmenge, also auch die Produktionsmenge wider. Die Produktion beeinflusst also diese Kennzahl.
+\begin{equation}
+  x = f(r_1,r_2,...r_n) 
+\end{equation}
+x: Ausbringungsmenge des Produktes \\
+$r_{i}$: Einsatzmenge der Produktionsfaktors i \\
+
+% Kostenfunktion
+
+In der Wirtschaft lassen sich Ziele unter anderem in ökonomische (Gewinn, Kosten, Wirtschaftlichkeit) und nicht ökonomische Ziele (Menge, Qualität der Produkte, Termineinhaltung) unterteilen.  Auf beide Zielarten hat die Produktion einen großen Einfluss oder sind maßgeblich an der Erreichung beteiligt.
+
+Eine der wichtige ökonomische Zielgröße ist die Wirtschaftlichkeit. Sie misst das Verhältnis zwischen wertemäßigen Out und wertemäßigen Input oder von Aufwand und Ertrag. Im Aufwand spiegeln sich die Kosten der Produktion und im Ertrag die Absatzmenge, also auch die Produktionsmenge wider. Die Produktion ist also eine mögliche Stellschraube für diese Kennzahl.
 \begin{equation}
   Wirtschaftlichkeit =\frac{Ertrag}{Aufwand}
 \end{equation}
 
-Auch die Produktivität ist eine geeignete Kennzahl, um die Produktion zu beurteilen. Sie beschreibt das Verhältnis von Ausbringungsmenge zu Faktoreinsatz. Betrachtet man die Einflussfaktoren der Produktion auf diese beiden Kennzahlen, ergibt das grob folgende Ziele: Hoher Output, hohe Produktqualität, hohe Termineinhaltung und Auslastung der Maschinen und Fertigungsbereiche, geringe Durchlaufzeit. Die Ziele werden von verschiedenen Bereichen der Planung beeinflusst.
 
-Um die Bereiche der Produktion strukturiert zu nennen, werden sie im folgenden anhand eines möglichen Produktionsprozesses beschrieben. 
+
+Eine nicht ökonomische und für die Produktionswirtschaft sehr relevante Zielgröße ist die Produktivität. Sie beeinflusst Wirtschaftlichkeit und eignet sich, um die Effizienz der Produktion zu beurteilen. Sie beschreibt das Verhältnis von Ausbringungsmenge zu Einsatzmenge eines bestimmten Faktors, oder kurz von mengenmäßigem Output zu Input. 
+
+\begin{equation}
+  Produktivit"at =\frac{Faktoreinsatzmenge}{Ausbringungsmenge}
+\end{equation}
+
+
+
+Betrachtet man die Einflussfaktoren der Produktion auf diese beiden Kennzahlen, könnten sich folgende Ziele ergeben, die jeweils von verschiedenen Bereichen des Produktion abhängen: 
+
+\begin{itemize}
+  \item hoher Output
+  \item hohe Produktqualität
+  \item Termineinhaltung
+  \item Auslastung der Maschinen und Fertigungsbereiche
+  \item geringe Durchlaufzeit 
+\end{itemize}
 
 \subsection{Produktionsprozess}
 
@@ -288,28 +317,51 @@ In der Produktionsplanung wird der Ablauf des Produktionsprozesses festgelegt. H
   \caption[Produktionsplanung]{Produktionsplanung \cite{07}}
 \end{figure}
 
+\begin{description}
+  \item[Produktionsprogramm]\hfill \\ 
+  Das Produktionsprogramm beschäftigt sich mit Fragestellungen, wie z.B. welche Produkte in welchem Umfang produziert werden und ob das Produktionsprogramm dem Absatzprogramm entsprechen soll. Außerdem wird bestimmt in welcher Menge und Art Produktionsfaktoren eingesetzt/beschafft werden müssen.
 
+  \item[Materialbedarf]\hfill \\ 
+  TBD 
 
-\paragraph{Produktionsprogramm}: $ $ \\ Das Produktionsprogramm beschäftigt sich mit Fragestellungen, wie z.B. welche Produkte in welchem Umfang produziert werden und ob das Produktionsprogramm dem Absatzprogramm entsprechen soll. 
+  \item[Kapazitätsplanung]\hfill \\ 
+  TBD 
 
-TBD
+  \item[Zeitplanung]\hfill \\ 
+  TBD 
+  \end{description}
 
-
-%Materialbedarf, Kapazitätsplanung, Zeitplanung
-%Produktionsprogramm: bestimmt in welcher Menge und art Produktionsfaktoren eingesetzt/beschafft werden müssen.
 
 \subsubsection{Durchführung der Produktion}
-Produktionsmethode: Fertigung, Montage
-Steuerung: just in time, lean,...
+
+\begin{description}
+  \item[Produktionsmethode]\hfill \\
+  Fertigung, Montage TBD
+
+  \item[Produktionssteuerung]\hfill \\ 
+  just in time, lean,... TBD
+  \end{description}
 
 \subsubsection{Kontrolle und Überwachung der Produktion}
 
-Qualität, Leistungsmessung, Fehleranalyse, Zeit
+\begin{description}
+  \item[Qualitätsmanagement]\hfill \\
+  TBD
+  \item[Leistungsmessung]\hfill \\ 
+  TBD
+  \item[Fehleranalyse]\hfill \\ 
+  TBD
+  \end{description}
 
-\subsection{Herausforderungen und Schwierigkeiten}
-In der Produktion können trotz einer guten Planung einige Probleme auftreten
 
-Engpässe, Lieferschwierigkeiten, Qualitätsprobleme, Kostenprobleme
+% \subsection{Herausforderungen und Schwierigkeiten}
+
+% In der Produktion kommen viele Faktoren zusammen. Sowohl interne Bereiche des Unternehmens, wie Einkauf, Vertrieb und Management haben einen Einfluss auf den Erfolg der Produktionen, als auch externe Faktoren wie Lieferanten, Rohstoffpreise und die politische Lage.
+% Probleme und Herausforderungen können also aus unterschiedlichem Ursprung stammen und sind oft nicht beeinflussbar. Mit einer guten Produktionsplanung können allerdings mögliche Risiken berücksichtigt und auftauchende Schwierigkeit gelindert oder vermieden werden.
+
+% Viele Herausforderungen und Probleme, die in der Produktion selbst auftreten, können beispielsweise mit dem Einsatz von Technologien, wie künstlicher Intelligenz 
+
+% Engpässe, Lieferschwierigkeiten, Qualitätsprobleme, Kostenprobleme
 
 
 \chapter{Anwendungen von Künstlicher Intelligenz in der Wirtschaft}
@@ -339,8 +391,11 @@ Erhöhung der Effizienz/Produktivität, Fehlerrate reduzieren, Verfügbarkeit de
 
 
 \section{Anwendungen in der Produktion}
+%Fallbeispiele
+\subsubsection{Industrieroboter}
+In der industriellen Produktion werden Roboter erst seit den 1960er-Jahren genutzt.Footnote 148 George Devol und Joe Engelberger entwickelten den „Unimate“, den ersten kommerziell erwerblichen Industrieroboter.Footnote 149 \cite{19}
 
-
+Während Industrieroboter in einer auf sie angepassten Arbeitswelt meist handwerkliche oder Handhabungs-Aufgaben erledigen. Industrieroboter werden meist in für den Menschen zu gefährlichen oder unzumutbaren Umgebungen eingesetzt, oder erledigen heute stupide Fließbandarbeit schneller und wesentlich genauer als Arbeiter. Roboter können Menschen in immer mehr Bereichen ersetzen (Automatisierung). Autos werden heutzutage mit starker Beteiligung von Robotern gebaut, und auch ein moderner Mikroprozessor wäre ohne einen Roboter nicht mehr herstellbar. cite-> WIKI
 
 
 \section{Herausforderungen?}
