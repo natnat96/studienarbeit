@@ -384,28 +384,62 @@ Der Begriff Industrie 4.0 beschreibt die umfassende Digitalisierung der industri
 
 Doch in der Realität sieht heutzutage noch anders aus. Laut der Deloitte-Studie werden eher einzelne Technologien verwendet, um einen Bereich effizienter zu gestalten, produktionsübergreifende ganzheitliche Lösungen, wodurch die Einzelanwendungen sich gegenseitig verstärken würden sind eher die Seltenheit.
 
-Auch Technologien der künstlichen Intelligenz spielen in der Industrie 4.0 eine Rolle. Doch erst eine fortschreitender Digitalisierung ermöglicht den Einsatz. Für die meisten Anwendungen vor allem aus dem Bereich des maschinellen Lernens sind große Datenmengen erforderlich. Diese existieren zwar, sind jedoch auf verschiedene Systeme verteilt und können nur schwer zusammengebracht werden. Doch auch schon heutzutage gibt es Beispiele von Produktionen in welchen KI-Systeme erfolgreich zum Einsatz kommen. 
+Auch Technologien der künstlichen Intelligenz spielen in der Industrie 4.0 eine Rolle. Doch erst eine fortschreitender Digitalisierung ermöglicht den Einsatz. Für die meisten Anwendungen vor allem aus dem Bereich des maschinellen Lernens sind große Datenmengen erforderlich. Diese existieren zwar, sind jedoch auf verschiedene Systeme verteilt und können nur schwer zusammengebracht werden. Doch auch schon heutzutage gibt es Beispiele von Produktionen in welchen KI-Systeme erfolgreich zum Einsatz kommen. Im Jahr 2020 befragte Bitkom Industrieunternehmen verschiedener Größen (am 100 Mitarbeiter), ob sie Künstliche Intelligenz im Kontext von Industrie 4.0 im Unternehmen nutzten. Nur etwa 10\% der Unternehmen mit 100 bis 500 Mitarbeiter beantworteten diese Frage mit ''ja'', bei größeren Unternehmen (ab 500 Mitarbeiter) waren es knapp jeden Vierte.\cite{27} 
  
 \section{Chancen und Herausforderungen}
 
+Befragte deutsche Industrieunternehmen sahen 2020 Predictive Maintenance als wichtigsten Vorteil von künstlicher Intelligenz im Kontext von Industrie 4.0, dicht gefolgt von der Steigerung der Produktivität und der Optimierung von Produktions- und Fertigungsprozessen. Als weitere Vorteile werden die Steigerung der Produktqualität, die bessere Skalierbarkeit und die Reduktion der Kosten gesehen.\cite{28}
 
-ethisch, Arbeitswelt
+Neben den Herausforderungen:
+%ethisch, Arbeitswelt,Mensch-Maschine Interaktion
+Hemmnisse bei 2022 befragten Geschäftsführern zum einsatz von I4.0: 80\% fehlende finanzielle Mittel, 67\% Datenschutz-Anforderungen, 61\% Anforderung an IT-Sicherheit, 58\% komplexität des Themas,... https://de.statista.com/statistik/daten/studie/830813/umfrage/hemmnisse-beim-einsatz-von-industrie-40-anwendungen-in-deutschland/
 
-Mensch-Maschine Interaktion
+
+
 
 \section{Anwendungen in der Produktion}
+Das Frauenhofer Institut sieht in einer Studie acht Anwendungsfelder von KI für produzierenden Unternehmen in produktionsnahen Bereichen: Instandhaltung, Logistik, Qualitätsmanagement und -kontrolle, Produkt- und Prozessentwicklung, Digitale Assistenzsysteme, Prozessoptimierung und -steuerung, Ressourcenplanung, und Automatisierungstechnik.\cite{24} Fünf dieser Bereiche werden in diesem Abschnitt der Arbeit mit konkreten Anwendungsbeispielen näher beschrieben.
 
-Anhand von drei Beispielen soll in diesem Abschnitt gezeigt werden, welche KI-Technologien bereits in Unternehmen der produzierenden Industrie genutzt werden. Dabei steht nicht das Ziel einer höheren Absatzmenge im Vordergrund, sondern die Steigerung der Effizienz und damit einhergehende Kosteneinsparungen.
+\subsubsection{Instandhaltung}
+Ohne Einsatz von KI in der Instandhaltung wird Maschinen in regelmäßigen Intervallen gewartet. Da es dann keine Informationen über den Zustand der Maschinen zwischen den Wartungen gibt, müssen die Intervalle so kurz sein, dass Ausfälle oder Schäden vermieden werden können. Durch KI-Anwendungen können die Wartungsintervalle bedarfsgerecht optimiert werden. Bei der vorbeugenden Wartung überwacht die KI Maschinen- und Prozesskenngrößen um die Abnutzung des Betriebsmittels zu ermitteln und entsprechend einen Wartungsbedarf einzelner Komponenten zu signalisieren. Dadurch wird die Terminierung der Wartungen zunehmend automatisiert und ermöglicht die Fokussierung auf einzelne Komponenten, anstatt einer Komplettwartung. Dies kann mit Hilfe von Aktionsplan-Algorithmen verwirklicht werden. Diese werden auf entsprechende Daten und Entscheidungen aus früheren Szenarien trainiert. Auch Anwendungen aus der Bild und Tonverarbeitung können für diese Art von Wartung genutzt werden. Durch Erweiterung der vorbeugenden Wartung durch weitere Algorithmen oder maschinelles lernen können vorhersagende Wartungssystemen (engl. Predictive Maintenance)  entwickelt werden. Hiermit ist eine Vorhersage über potentielle Ausfälle von Komponenten möglich anhand von Trendanalysen und komplexer Mustererkennung. \cite{24}
 
-\subsubsection{Industrieroboter}
+Die häufigste Anwendung von KI in der Instandhaltung war 2019 bei über 300 befragten deutschen Firmen die automatisierte Verfolgen und das Anzeigen der Fälligkeit von regelmäßigen Wartungsarbeiten. Auch für die Optimierung der Erzeugnis-Qualität und für die rechtzeitige und automatisierte Erkennung von Verschleiß wird KI genutzt.\cite{29}
 
-\subsubsection{Predictive Maintance}
+Als Beispiel kann eine Maschinenüberwachung von der Schaeffler-Gruppe genannt werden. An Hand von Echtzeitdaten aus dem Lagern einer Maschine (Temperatur, Schwingungen, Kräfte, Schmierzustand) wird ein virtuelles Abbild des aktuellen Zustands der Maschine erzeugt. Wenn nötig werden automatisierte Wartungsaktivitäten vorgenommen (z.B. Hinzufügen von Schmierstoff). Zeigen diese keine Wirkung, wird ein Wartungsmitarbeiter per Smartphone informiert. \cite{30}
 
+\subsubsection{Qualitätsmanagement und -kontrolle}
+Für die Qualitätsprüfung werden häufig Algorithmen der Bild- und Tonverarbeitung genutzt. Sie liefern schneller exaktere Ergebnisse als manuelle optische Überprüfungen. Die Systeme können außerdem die genaue unerwünscht Abweichung bestimmen und stellen diese Information anderen Systemen zu Verfügung. Mit geeigneten Eingangsdaten kann eine Mustererkennung bei der Suche nach der Ursache von Qualitätsschwankungen unterstützen oder automatisch präventiv eingreifen. \cite{24}
 
+Das Unternehmen Gestalt Robotics GmbH bietet eine KI-Plattform für zuverlässige Qualitätsprüfung an. Hier werden Bauteile oder Produkte mittels 2D- und 3D-Kameras überwacht und auf Fehler überprüft. Die Software lernt kontinuierlich und verbessert somit den Prozess. \cite{31}
+
+\begin{figure}[H]
+  \center
+ \includegraphics[width=10cm]{images/Gestalt Robotics.png}
+  \caption[Qualitätsprüfung-Dashboard von Gestalt Robotics GmbH]{Qualitätsprüfung-Dashboard von Gestalt Robotics GmbH \cite{31}}
+\end{figure}
+
+\subsubsection{Digitale Assistenzsyteme}
+Das Ziel digitaler Assistenzsysteme ist die Unterstützung der Mitarbeiter beispielsweise durch die Bereitstellung von passenden Informationen, wenn diese benötigt werden. Durch Technologien wie
+regelbasierte Planungsalgorithmen und Computer Vision können die Systeme Einsatzsituationen erkennen und Inhalte z.B. angepasst auf das Qualifikationsniveau des Mitarbeiters bereitstellen. Durch maschinelles Lernen können Assistenzsysteme von Nutzer lernen und sich anschließend besser auf ihn einstellen zu können. Mittels Spracherkennung und -generierung können Mensch-Maschine-Schnittstellen bei der Eingabe und Ausgabe von Informationen unterstützt werden.
+
+Eine Anwendung digitaler Assistenzsysteme bietet die Firma TRUMPF GmbH + Co. KG, Hersteller von Laserschneidanlagen und Werkzeugmaschinen. Werden beispielsweise auf einem Blech verschiedene Bauteile ausgeschnitten, erkennt das System welches Bauteil der Mitarbeiter aus dem Blech gelöst hat und zeigt ihm dann den richtigen Ablageort an. \cite{24}
+
+\subsubsection{Prozessoptimierung und -steuerung}
+Die Prozesssteuerung beschäftigt sich im Wesentlichen mit der Automatisierung von dynamischen Regelschleifen. Mittels maschinellem Lernens können beispielsweise komplexe Zusammenhänge von verketteten Produktionslinien erkennt werden, die für den Menschen nicht direkt ersichtlich sind.So können z.B. Ursachen für wandernde Engpässe in der Produktion aufgedeckt werden.
+
+Ein Visualisierungs- und Analysewerkzeug von Lana Labs GmbH nutzt welches bereits vorhandene Daten aus beispielsweise einem ERP-System und erstellt darauf basierend automatisiert Prozessmodelle, die einen  Ist-Soll-Zustandsvergleich des Betriebs ermöglicht. Außerdem unterstützt das System bei der Suche nach Ursachen, wenn ein Problem im Prozess auftritt. \cite{24}
+
+\subsubsection{Automatisierungstechnik}
+Seit 2011 hat sich der geschätzte Bestand von Industrierobotern weltweit verdreifacht von 1,1 auf knapp 3,5 Millionen Stück.\cite{25} Vor allem in der Automobilindustrie und in der Elektronikbranche sind Industrieroboter im Einsatz. Innerhalb eines Jahres (2018-2019) nahm der Bestand in beiden Branchen jeweils um knapp 80.000 Roboter zu.\cite{26}
+
+Bisher war das Training von Industrierobotern mit hohen Einrichtungskosten bei geringer Flexibilität verbunden. Dadurch lohnten sich diese nur bei häufig wiederholten Prozessen. Doch mittlerweile können Industrieroboter mit Hilfe des maschinellen Lernens neue Prozesse durch das Nachahmen der menschlichen Bewegungen lernen. Bei Übergabepunkten können die Roboter durch Bildverarbeitung die Lage und Orientierung des Bauteils erkennen und entsprechend greifen. Beides erhöht die Flexibilität und Stabilität im Gegensatz zu bisherigen Automatisierungslösungen.
+Mit sicherheitszertifizierter Sensorik und Bildverarbeitung ist dann sogar eine  direkte Mensch-Roboter-Kollaboration ohne Sicherheitszaun möglich, die durch Natural Language Processing (NLP)noch intuitiver gestaltet werden.
+
+Die Firma B + M Blumenbecker GmbH ermöglicht mit ihrer KI-Lösung Industrie das Erfassen und Greifen von Bauteilen in beliebiger Lage. Mit Hilfe von Kameras wird die Lage und Orientierung beispielsweise von Schüttgütern in einer Box überwacht, damit das System dann ein Bauteil auswählt, das für den Industrieroboter greifbar ist. Dann wird dieser dort hingeführt. \cite{24}
 
 \chapter{Potenziale für KI in der Produktion}
-Technologien der künstlichen Intelligenz finden im letzten Jahrzehnt immer mehr Anwendung in der Wirtschaft und vor allem in der Fertigung. Immer mehr Firmen rüsten ihre Produktion um, um sie effizienter zu gestalten. Wie in Kapitel 2.1 bereits erwähnt, ist das KI-Forschung sehr dynamisch und bringt laufen neue Technologien hervor. Anwendungen für produzierende Unternehmen befinden sich daher grade noch in den Grundbausteinen, daher werden in den nächsten 5-10 Jahren große Entwicklungsschritte KI in der Produktion erwartet.
-
+Technologien der künstlichen Intelligenz finden im letzten Jahrzehnt immer mehr Anwendung in der Wirtschaft und vor allem in der Fertigung. Immer mehr Firmen rüsten ihre Produktion um, um sie effizienter zu gestalten. Wie in Kapitel 2.1 bereits erwähnt, ist das KI-Forschung sehr dynamisch und bringt laufen neue Technologien hervor. Anwendungen für produzierende Unternehmen befinden sich grade noch in den Grundbausteinen, daher werden in den nächsten 5-10 Jahren große Entwicklungsschritte KI in der Produktion erwartet.\cite{08} 
+Laut Prognosen von Wissenschaftlern des Instituts für Innovation und Technik soll ein Drittel des Wachstums der produzierenden Industrie in den nächsten fünf auf dem Einsatzes von KI basieren.\cite{24}
 
 % Qualitätsmanagement (Computer vision, sound)
 
@@ -416,23 +450,10 @@ Technologien der künstlichen Intelligenz finden im letzten Jahrzehnt immer mehr
 \section{Potentiale für die Wirtschaft}
 
 Die KI-Forschung entwickelt sich laufen weiter. Immer mehr Technologien werden entwickelt, die für eine effizientere Produktion genutzt werden könnten. D
+ 
 
 
 
-\paragraph{Steigerung der Qualität} $ $ \\ 
-Steigerung der Qualität: Qualität überwachen und verbessern, indem Fehler und defekte automatisch erkannt und korrigiert werden, Erhöhung Kundenzufriedenheit
-
-\paragraph{Flexibilität und Anpassungfähigkeit} $ $ \\ 
-Flexibilität und Anpassungsfähigkeit: Prozesse schneller und flexibler an veränderte Bedingungen anpassen, zb Änderungen der Produktionsanforderungen, dadurch eff/Prod
-
-\paragraph{Predictive Maintenance} $ $ \\ 
-Zustand der Produktionsanlagen, Vorhersagen um Wartungsarbeiten gezielt durchzuführen, erhöht Verfügbarkeit der Anlagen und verringert Kosten für Reparaturen und Wartungsarbeiten
-
-\paragraph{Erhöhung der Effizienz} $ $ \\ 
-Prozesse automatisieren, Produktionsleistungen überwachen und optimieren, Fehlerrate reduzieren, Effizienz und Produktivität in Produktion erhöhen
-
-\paragraph{Reduzierung von Kosten} $ $ \\ 
-Erhöhung der Effizienz/Produktivität, Fehlerrate reduzieren, Verfügbarkeit der Anlage erhöhen
 
 \section{Potenzialanalyse von KI-Systemen}
 
@@ -451,6 +472,11 @@ Sowohl der Forschungsbereich der künstlichen Intelligenz als auch die KI-Anwend
 \input{Studienarbeit-Literatur}
 
 \appendix
+\section{Abbildungen}
+
+
+
+\section{Experteninterview}
 
 
 \end{document}
