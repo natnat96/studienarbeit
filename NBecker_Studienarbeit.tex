@@ -1,6 +1,7 @@
 \documentclass[a4paper,12pt, german]{report}
 \usepackage[german]{babel}
 \usepackage[utf8]{inputenc}
+\linespread{1.3}
 %\setcounter{tocdepth}{2}
 %\setcounter{secnumdepth}{2}
 
@@ -35,28 +36,27 @@
 \end{center}
 This is the Abstract
 
-
 \tableofcontents
 %\printacronyms
 
 \chapter{Einleitung}
-%FAKT
-In den letzten Jahren hat die Verwendung künstliche Intelligenz (KI) in der Wirtschaft und so auch in der Produktion stark zugenommen und trägt hier unter anderem zur Optimierung von Prozessen und zur Steigerung der Effizienz bei. Durch die Anwendung von Technologien, wie z.B. maschinellem Lernen oder Computer Vision bietet KI Möglichkeiten in der Produktion Probleme in Echtzeit zu erkennen und diese zu lösen, die Qualität von Produkten zu verbessern und auch die allgemeine Produktivität zu erhöhen. Durch die zahlreichen Durchbrüche im Forschungsfeld der KI, ergeben sich laufend neue Potentiale für die Wirtschaft. 
 
-Das Ziel dieser Arbeit ist es Potentiale von KI in der Produktion zu erarbeiten und zu bewerten. Hierfür wird zunächst ein Überblick sowohl über das Forschungsfeld und die Anwendungen der KI, als auch über den wirtschaftlichen Bereich der Produktion geschaffen. Nach der Beschreibung aktueller Beispiele von KI-Systemen in der Produktion, werden auf dieser Grundlage weitere mögliche Anwendungen aufgeführt und hinsichtlich der Wirtschaftlichkeit diskutiert.  
+In den letzten Jahren hat die Verwendung künstlicher Intelligenz (KI) in der Wirtschaft und so auch in der Produktion stark zugenommen und trägt hier unter anderem zur Optimierung von Prozessen und zur Steigerung der Effizienz bei. Durch die Anwendung von Technologien, wie z.B. maschinelles Lernen oder Computer Vision bietet KI Möglichkeiten in der Produktion Probleme in Echtzeit zu erkennen und diese zu lösen, die Qualität von Produkten zu verbessern und die allgemeine Produktivität zu erhöhen. Durch zahlreiche Durchbrüche im Forschungsfeld der KI, ergeben sich laufend neue Potenziale für die Wirtschaft. 
+
+Das Ziel dieser Arbeit ist es, Potenziale von KI in der Produktion zu erarbeiten. Hierfür wird zunächst ein Überblick sowohl über das Forschungsfeld und die Anwendungen der KI als auch über den wirtschaftlichen Bereich der Produktion geschaffen. Nach der Beschreibung aktueller Beispiele von KI-Anwendungen in der Produktion, werden unter Berücksichtigung der Hemmnisse die Potenziale von KI an sich und in Kombination mit Technologien der Digitalisierung diskutiert.
+
 
 \chapter{Stand der Technik}
 
-Das Forschungsgebiet der künstlichen Intelligenz ist breit gefächert und umfangreich. Der folgende Abschnitt gibt einen Einblick in diesen Bereich der Informatik. Auch das wirtschaftliche Feld der Produktion wird in diesem Abschnitt beleuchtet.
+Das Forschungsgebiet der künstlichen Intelligenz ist breit gefächert und umfangreich. Der folgende Abschnitt gibt einen Einblick in diesen Bereich der Informatik. Auch das Thema Produktion wird in diesem Abschnitt beleuchtet.
 
 \section{Künstliche Intelligenz}
 
-Kaum eine Technologie bietet Grundlage für mehr Utopien und Dystopien wie die künstliche Intelligenz. Filme in denen KI-Roboter die Welt übernehmen oder eine Wirtschaft in der durch KI kaum mehr ein Mensch arbeiten muss, sind Beispiele dafür. Was KI ist, derzeit wirklich kann und in welchen Gebieten geforscht wird, wird in den kommenden Unterkapiteln aufgeführt. 
+Kaum eine Technologie bietet Grundlage für mehr Utopien und Dystopien wie die künstliche Intelligenz. Filme in denen KI-Roboter die Welt übernehmen oder eine Wirtschaft, in der durch KI kaum mehr ein Mensch arbeiten muss, sind Beispiele dafür. Was KI ist, derzeit wirklich kann und in welchen Gebieten geforscht wird, wird in den kommenden Unterkapiteln aufgeführt. 
 
 \subsection{Grundlagen}
 
-Künstliche Intelligenz (engl. Artificial Intelligence oder AI) ist ein Forschungszweig der Informatik und beschreibt eher einen Sammelbegriff als konkrete Disziplin oder Technologien. Grob geht es hier um technische Systeme, die selbstständig Lösungen für Probleme finden oder Entscheidungen treffen können. \cite{01}\cite{10}
-
+Künstliche Intelligenz (engl. Artificial Intelligence oder AI) ist ein Forschungszweig der Informatik und beschreibt eher einen Sammelbegriff als eine konkrete Disziplin oder Technologien. Grob geht es hier um technische Systeme, die selbstständig Lösungen für Probleme finden oder autonom Entscheidungen treffen können. \cite{01}\cite{10}\newline
 Künstliche Intelligenz vereint verschiedene Disziplinen aus der Informatik und Mathematik. Sowohl die Statistik als auch Big Data spielen in KI-Technologien und Systemen eine große Rolle.\cite{17}
 
 \begin{figure}[H]
@@ -67,100 +67,94 @@ Künstliche Intelligenz vereint verschiedene Disziplinen aus der Informatik und 
 
 
 \subsubsection{Definition und Zielsetzung}
-Die Definition der künstlichen Intelligenz ist in der Literatur uneindeutig. Schon für den Begriff der Intelligenz existiert keine allgemeingültige Definition und nur umstrittene Methoden zur Messung dieser. Über die letzten Jahrzehnte hat sich sowohl der Schwerpunkt des Forschungsgebietes, als auch dessen Zielsetzung immer wieder gewandelt. Ihren Ursprung fand die künstliche Intelligenz im Jahr 1955 mit der ersten Beschreibung durch John McCarthy:
+Die Definition der künstlichen Intelligenz ist in der Literatur uneindeutig. Schon für den Begriff der Intelligenz existiert keine allgemeingültige Definition. Über die letzten Jahrzehnte hat sich sowohl der Schwerpunkt des Forschungsgebietes der KI als auch dessen Zielsetzung immer wieder gewandelt. Ihren Ursprung fand sie im Jahr 1955 mit der ersten Beschreibung durch John McCarthy \cite{11}:
 \begin{quote}
   ''Ziel der KI ist es, Maschinen zu entwickeln, die sich verhalten, als verfügten sie über Intelligenz.''
 \end{quote}
- Mit der Schwierigkeit die Intelligenz an sich zu definieren, verliert diese Erklärung an Aussagekraft. Elaine Rich bietet im Jahr 1983 eine weitere Möglichkeit den Gegenstand der KI-Forschung zu benennen: 
+Mit der Schwierigkeit die Intelligenz an sich zu definieren, verliert diese Erklärung an Aussagekraft. Elaine Rich bietet im Jahr 1983 eine weitere Möglichkeit den Gegenstand der KI-Forschung zu benennen: 
 
- \begin{quote}
-  ''Artificial Intelligence is the study of how to make computers do things at which, at the moment, humans are better.''
- \end{quote} 
-
- Damit schafft Rich eine Beschreibung, die sowohl in der Vergangenheit, als auch in der Zukunft Anwendung findet. Beispielsweise sind Menschen bei Erkennen von Objekten, Menschen oder Sprachen den Maschinen noch weit überlegen. Bild- und Spracherkennung sind wichtige Forschungsbereiche der KI. Ein zentrales Gebiet der Forschung ist demnach auch das maschinelle Lernen, denn vor allem die Lernfähigkeit des Menschen durch Adaptivität stellt sich für Computer als Herausforderung dar.Dahingegen ist die Entwicklung von Schachcomputern nicht mehr relevant, denn diese sind bereits besser als der Mensch. Dennoch geht es bei KI nicht nur um praktische Implementierungen intelligenter Verfahren. Ein Teil des Forschungsgebietes befasst sich auch mit dem Verständnis des menschlichen Handelns und Schließens (Kognitionswissenschaft).
- \cite{11}
-
+\begin{quote}
+''Artificial Intelligence is the study of how to make computers do things at which, at the moment, humans are better.''
+\end{quote} 
+Damit schafft Rich eine Beschreibung, die sowohl in der Vergangenheit als auch in der Zukunft Anwendung findet. Beispielsweise sind Menschen beim Erkennen von Objekten, Menschen oder Sprachen den Maschinen noch weit überlegen. Bild- und Spracherkennung sind wichtige Forschungsbereiche der KI. Ein zentrales Gebiet der Forschung ist demnach auch das maschinelle Lernen, denn vor allem die Lernfähigkeit des Menschen durch Adaptivität stellt sich für Computer als Herausforderung dar. Dahingegen ist die Entwicklung von Schachcomputern nicht mehr relevant, denn diese sind bereits besser als der Mensch. Dennoch geht es bei KI nicht nur um praktische Implementierungen intelligenter Verfahren. Ein Teil des Forschungsgebietes befasst sich auch mit dem Verständnis des menschlichen Handelns und Schließens (Kognitionswissenschaft). \cite{11} \newline
 Das KI-System ChatGPT des Unternehmens OpenAI beschreibt künstliche Intelligenz, also seinen eigenen Hintergrund so \cite{04}:
 \begin{quote}
   ''Künstliche Intelligenz (KI) ist ein interdisziplinäres Gebiet, das sich mit der Entwicklung von Algorithmen und Systemen beschäftigt, die eine menschliche Intelligenz und kognitive Fähigkeiten imitieren. KI-Systeme können Aufgaben ausführen, die normalerweise nur von Menschen erledigt werden können, wie zum Beispiel das Verstehen von Sprache, das Erkennen von Gesichtern oder das Lösen komplexer Probleme.''
 \end{quote}
 
-\begin{figure}[H]
+\begin{figure}
   \center
  \includegraphics[width=14cm]{images/ChatGPT.png}
   \caption[KI beschrieben von ChatGPT]{KI beschrieben von ChatGPT \cite{04}}
 \end{figure}
+ChatGPT ist ein Chatbot, der Fragestellungen und Aufforderungen des Anwenders versteht und darauf antwortet bzw. die Aufgaben ausführt. Das Wissen ist allerdings nicht sein eigenes, denn er wurde mit großen Datenmengen trainiert, um diese Fähigkeit zu erlangen. Das beutet, dass dies nicht seine eigene Definition ist, sondern vermutlich eine Kombination aus allen Erklärungen zum Thema KI, mit dem das System trainiert wurde. Auf diesen Chatbot und die zugrundeliegende Technologie wird in einem späteren Teil der Arbeit näher eingegangen.
 
-ChatGPT ist ein Chatbot, der Fragestellungen und Aufforderungen des Anwenders versteht und darauf antwortet bzw. die Aufgaben ausführt. Das Wissen ist allerdings nicht sein eigenes, denn er wurde mit großen Datenmengen trainiert, um diese Fähigkeit zu erlangen. Das beutet, dass dies nicht seine eigene Definition ist, sondern vermutlich eine Kombination aus allen Erklärungen zum Thema KI mit dem das System trainiert wurde. Auf diesen Chatbot und der zugrundeliegenden Technologie wird in einem späteren Teil der Arbeit näher eingegangen.
-
-Der Forschungsgegenstand und die Ziele der KI haben sich seit ihren Anfängen geändert. Während früher ausschließlich an Universitäten mit Zielen wie der Entwicklung eines Schachcomputers, der dem Mensch überlegen ist, geforscht wurde, stehen heutzutage kommerzielle Anwendungen im Vordergrund. 
-Gerade weil KI mittlerweile eine große Bedeutung in der Wirtschaft hat, wird mehr Geld in die Forschung investiert. So forschen nicht nur Universitäten, sondern auch andere Forschungsinstitute und Unternehmen in vielen Bereichen der KI. Auch die Verfügbarkeit von großen Datenmengen zu Trainingszwecken, die durch Verfahren der Daten-Analyse (Big-Data) für KI genutzt werden können, tragen einen großen Teil zu den zahlreichen Erfolgen der jüngeren Vergangenheit und Gegenwart bei. \cite{10}
+Der Forschungsgegenstand und die Ziele der KI haben sich seit ihren Anfängen geändert. Während früher ausschließlich an Universitäten mit Zielen wie der Entwicklung eines Schachcomputers, der dem Menschen überlegen ist, geforscht wurde, stehen heutzutage kommerzielle Anwendungen im Vordergrund. 
+Gerade weil KI mittlerweile eine große Bedeutung in der Wirtschaft hat, wird mehr Geld in die Forschung investiert. So forschen nun nicht nur Universitäten, sondern auch andere Forschungsinstitute und Unternehmen in vielen Bereichen der KI. Auch die Verfügbarkeit von großen Datenmengen zu Trainingszwecken, die durch Verfahren der Daten-Analyse (Big-Data) für KI genutzt werden können, tragen einen großen Teil zu den zahlreichen Erfolgen der jüngeren Vergangenheit und Gegenwart bei. \cite{10}
 
 \subsubsection{Turing-Test}
 
-Doch im Grunde basiert künstliche Intelligenz auf statistischen Wahrscheinlichkeiten. Viele KI-Experten sehen den Begriff der KI allgemein als nicht zutreffend an. Denn derzeit handelt sich nicht etwa um Systeme, die mit Kreativität besitzen oder neue Ideen entwickeln. Es sind Systeme, die durch verschiedene Lernmethoden oder mit Wissen gefütterte Algorithmen, fest definierte Aufgaben erledigen. 
-
-Betrachtet man nun allerdings den Turing-Test, ist der Begriff ''Intelligenz'' keineswegs falsch.  Er wurde 1950 vom britischen Mathematiker und Informatiker Alan Mathison Turing entwickelt und ist seitdem ein überwiegend anerkannter Test, um festzustellen, ob eine Maschine intelligent ist oder nicht.
-Dabei führt ein Mensch eine schriftliche Unterhaltung, ohne es zu wissen mit einer Maschine. Hier spielen weder Mimik, Gestik noch Tonalität eine Rolle. Damit die Maschine den Test besteht müssten 30 Teilnehmer nach jeweils einem 5-mintütigen Chatgespräch nicht beurteilen können, ob es sich es sich bei dem Chat-Partner um einen Menschen oder eine Maschine gehandelt hat. Die Frage nach einem Bewusstsein wird dabei nicht geprüft. Erst 2014 bestand erstmals eine Maschine den Test. \newline
-Doch es gibt Kritik am Turing-Test. Davon abgesehen, dass nicht jede KI an diesem Test teilnehmen könnte, weil das Verstehen und Interpretieren von Sprache ein spezielles Feld der KI-Forschung ist, muss sich der Computer dümmer stellen als er eigentlich ist, um zu bestehen. Würde der Mensch nach der Einwohnerzahl Mannheims fragen und der Computer würde antworten ''am 31.12.2021 hatte Mannheim 311.831 Einwohner'' würde er sofort als Maschine identifiziert werden. Um den Test zu bestehen, muss sich der Computer also anpassen und taktisch verhalten. Allerdings besteht hier die Frage, ob ein solche gezielte Täuschung das Vertrauen in KI mindert. \cite{02}
+Im Grunde basiert künstliche Intelligenz auf statistischen Wahrscheinlichkeiten. Viele KI-Experten sehen den Begriff der KI allgemein als nichtzutreffend an. Denn derzeit handelt sich nicht etwa um Systeme, die Kreativität besitzen oder neue Ideen entwickeln. Es sind Systeme, die durch verschiedene Lernmethoden oder mit Wissen gefütterte Algorithmen, fest definierte Aufgaben erledigen. \newline
+Betrachtet man nun allerdings den Turing-Test, ist der Begriff ''Intelligenz'' keineswegs falsch. Der Test wurde 1950 vom britischen Mathematiker und Informatiker Alan Mathison Turing entwickelt und ist seitdem ein überwiegend anerkannter Test, um festzustellen, ob eine Maschine intelligent ist oder nicht.
+Dabei führt ein Mensch eine schriftliche Unterhaltung, ohne es zu wissen mit einer Maschine. Hier spielen weder Mimik, Gestik noch Tonalität eine Rolle. Damit die Maschine den Test besteht, müssen 30 Teilnehmer nach jeweils einem 5-minütigen Chatgespräch nicht beurteilen können, ob es sich es sich bei dem Chat-Partner um einen Menschen oder eine Maschine gehandelt hat. Die Frage nach einem Bewusstsein wird dabei nicht geprüft. Erst 2014 bestand erstmals eine Maschine den Test. \newline
+Doch es gibt Kritik am Turing-Test. Davon abgesehen, dass nicht jede KI an diesem Test teilnehmen könnte, weil das Verstehen und Interpretieren von Sprache ein spezielles Feld der KI-Forschung ist, muss sich der Computer dümmer stellen als er eigentlich ist, um zu bestehen. Würde der Mensch nach der Einwohnerzahl Mannheims fragen und der Computer würde antworten ''am 31.12.2021 hatte Mannheim 311.831 Einwohner'' würde er sofort als Maschine identifiziert werden. Um den Test zu bestehen, muss sich der Computer also anpassen und taktisch verhalten. Allerdings besteht hier die Frage, ob eine solche gezielte Täuschung das Vertrauen in KI mindert.\cite{02}
 
 \subsubsection{Schwache und starke KI}
 
 
-Zur näheren Begriffsklärung wird zwischen schwacher und starker KI unterschieden. Unter schwacher KI (engl. ''Narrow AI'' oder ''Special Purpose AI'')  versteht man KI-Systeme, die für einen spezifischen Zweck, bzw. zur Lösung einer definierten Problematik entwickelt wurden. Sie können also Aufgaben ausführen, die sonst nur Menschen bewältigen können, meistens sogar schneller und effizienter. Allerdings sind sie nicht imstande kognitive Fähigkeiten eines Menschen zu imitieren. So sind Sprachassistenten wie Siri und Alexa in der Lage Sprachbefehle zu verstehen und auszuführen, sie besitzen aber keine emotionale Kompetenz oder die Fähigkeit komplexe Probleme zu lösen. \cite{01}\cite{15}
+Zur näheren Begriffsklärung wird zwischen schwacher und starker KI unterschieden. Unter schwacher KI (engl. ''Narrow AI'' oder ''Special Purpose AI'') versteht man KI-Systeme, die für einen spezifischen Zweck, bzw. zur Lösung einer fest definierten Problematik entwickelt wurden. Sie können also Aufgaben ausführen, die sonst nur Menschen bewältigen können, meistens sogar schneller und effizienter. Allerdings sind sie nicht imstande andere Aufgaben zu erledigen oder kognitive Fähigkeiten eines Menschen zu imitieren. So sind Sprachassistenten wie Siri und Alexa in der Lage Sprachbefehle zu verstehen und auszuführen, sie besitzen aber keine emotionale Kompetenz oder die Fähigkeit komplexe Probleme zu lösen. \cite{01}\cite{15}
 
 \begin{figure}[H]
   \center
  \includegraphics[width=10cm]{images/starkeschwacheKI.png}
   \caption[Schwache und Starke KI]{Schwache und starke KI (eigene Abbildung)}
 \end{figure}
-
-Im Gegensatz dazu wird bei starker KI (engl. General AI) eine komplette Nachbildung bzw. Imitation der menschlichen Intelligenz verstanden. Diese ist nicht nur auf ein Gebiet spezialisiert ist, sondern agiert gebietsübergreifend. Das bedeutet, diese verschieden Aufgaben ausführen könnte, für die bisher menschliche kognitive Fähigkeiten nötig sind und dass Erkenntnisse aus einem Bereich auf andere Bereiche angewendet werden können. Damit könnten auch unbekannte Probleme durch die KI gelöst werden. Sie sind in der Lage ihre Umwelt zu verstehen und eigenständig zu lernen. In der aktuellen Forschung ist die Entwicklung ein starken KI jedoch nicht nicht absehbar und wird von manchen Experten sogar als unmöglich eingestuft. Bei der Entwicklung sollten außerdem mögliche Gefahren und ethische Aspekte berücksichtigt werden. 
-
-
+Im Gegensatz dazu wird bei starker KI (engl. General AI) eine komplette Nachbildung bzw. Imitation der menschlichen Intelligenz verstanden. Diese ist nicht nur auf ein Gebiet spezialisiert ist, sondern agiert gebietsübergreifend. Das bedeutet, dass sie verschiedene Aufgaben ausführen könnte, für die bisher menschliche kognitive Fähigkeiten nötig sind und dass Erkenntnisse aus einem Bereich auf andere Bereiche angewendet werden könnten. Damit wären auch für die KI unbekannte Probleme lösbar. Sie ist in der Lage ihre Umwelt zu verstehen und eigenständig zu lernen. In der aktuellen Forschung ist die Entwicklung einer starken KI jedoch nicht absehbar und wird von manchen Experten sogar als unmöglich eingestuft. Bei der Entwicklung sollten außerdem mögliche Gefahren und ethische Aspekte berücksichtigt werden. 
 
 Im Kontext dieser Arbeit und auch in weiten Teilen der Forschung und Anwendung wird von schwacher KI gesprochen. \cite{01}\cite{15}
 
 \subsection{Maschinelles Lernen}
 
-Eine künstliche Intelligenz ist nicht von Beginn an intelligent. Sie muss lernen. Maschinelles Lernen (Machine Learning) ist eines der größten KI-Forschungsfelder. Anhand verschiedener Lernmethoden wird das technische System mit Daten trainiert, wodurch erst die Fähigkeiten der KI entstehen. Die jeweiligen Ansätze sind für unterschiedliche Anwendungen geeignet. Dennoch bringen auch unkonventionelle Ansätze Durchbrüche in der Forschung. \newline
-
+Eine künstliche Intelligenz ist nicht von Beginn an intelligent. Sie muss lernen. Maschinelles Lernen (Machine Learning) ist eines der größten KI-Forschungsfelder. Anhand verschiedener Lernmethoden wird das technische System mit Daten trainiert, wodurch erst die Fähigkeiten der KI entstehen. Die jeweiligen Ansätze sind für unterschiedliche Anwendungen geeignet. \newline
 Folgend werden die relevantesten Methoden genannt und kurz beschrieben. \cite{10}
 
 \subsubsection{Supervised Learning (Überwachtes Lernen)} 
 
-Supervised Learning ist derzeit der am weitesten verbreitete Ansatz des Machine Learnings. Dabei werden bekannte Daten, sogenannte Trainingsdaten genutzt. Diese enthalten bereits Ergebnisse zu den jeweiligen Eingaben. Der Algorithmus erhält zunächst nur die Eingaben und trifft eine Entscheidung über die Ausgabe. Anschließend vergleicht er seine Aussagen mit dem vorgegebenen Ergebnis und passt seine nächste Beurteilung entsprechend an. Der Algorithmus wird so lange trainiert, bis nahezu immer die korrekte Entscheidung getroffen wurde. Dadurch soll der Algorithmus anschließend in der Lage sein Aussagen zu neuen, unbekannten Eingaben treffen zu können.\cite{01}\cite{05}
+Supervised Learning ist derzeit der am weitesten verbreitete Ansatz des maschinellen Lernens. Dabei werden bekannte Daten, sogenannte Trainingsdaten genutzt. Diese enthalten bereits Ergebnisse (Label) zu den jeweiligen Eingaben. Der Algorithmus erhält zunächst nur die Eingabe und trifft eine Entscheidung über die Ausgabe. Anschließend vergleicht er seine Aussage mit dem vorgegebenen Ergebnis und passt seine nächste Beurteilung entsprechend an. Der Algorithmus wird so lange trainiert, bis nahezu immer die korrekte Entscheidung getroffen wurde. Dadurch soll der Algorithmus anschließend in der Lage sein Aussagen zu neuen, unbekannten Eingaben treffen zu können.\cite{01}\cite{05} \newline
+Beispielsweise werden dem Algorithmus unsortiert Bilder von Katzen und Hunden gezeigt. Er sieht während seiner Entscheidung aber nicht das jeweilige Label "Katze'' oder "Hund". Er entscheidet anhand des Bildes, um welches der beiden Tiere es sich handelt und überprüft anschließend, ob seine Aussage korrekt war. So lernt der Algorithmus wie er Hunde und Katzen unterscheiden kann. Solche Algorithmen werden beispielsweise für Bilderkennungs-Systeme verwendet. 
+\begin{figure}[H]
+  \center
+  \includegraphics[width=12cm]{images/supervised.png}
+  \caption[Gelabelte Bilder von Hunden und Katzen]{Gelabelte Bilder von Hunden und Katzen (eigene Darstellung)}
+\end{figure}
 
-Beispielsweise werden dem Algorithmus unsortiert Bilder von Katzen und Hunden gezeigt. Er sieht während seiner Entscheidung aber nicht das jeweilige Label "Katze'' oder "Hund". Er entscheidet anhand des Bildes, um welches der beiden Tiere es sich handelt und überprüft anschließend, ob seine Aussage korrekt war. So lernt der Algorithmus wie er Hund und Katzen unterscheiden kann. Solche Algorithmen werden beispielsweise für Bilderkennungs-Systeme verwendet. 
-%Abbildung
-
-Diese Lernmethode wird gerne genutzt, da der Entwickler hier die Kontrolle über die Trainingsdaten, also den Input hat. Es ist von Anfang an klar, welches Ergebnis am Ende stehen soll. Allerdings nimmt diese Methode viel Zeit in Anspruch, da die Daten vor der Verwendung gelabelt werden müssen. Ein Problem dieser Methodik ist auch, dass der Algorithmus nur das lernt, was er mit den Inputdaten beigebracht bekommt. Wird ein Algorithmus beispielsweise nur mit Bildern von schwarzen Katzen trainiert, lernt er, dass eine Katze schwarzes Fell besitzt, und wird wahrscheinlich eine weiße Katze nicht erkennen.
+Diese Lernmethode wird gerne genutzt, da der Entwickler hier die Kontrolle über die Trainingsdaten, also den Input hat. Es ist von Anfang an klar, welches Ergebnis am Ende stehen soll. Allerdings nimmt diese Methode viel Zeit in Anspruch, da die Daten vor der Verwendung gelabelt werden müssen. Ein Problem dieser Methodik ist auch, dass der Algorithmus nur das lernt, was er mit den Trainingsdaten beigebracht bekommt. Wird ein Algorithmus beispielsweise nur mit Bildern von schwarzen Katzen trainiert, lernt er, dass eine Katze schwarzes Fell besitzt, und wird wahrscheinlich eine weiße Katze nicht erkennen.
 
 \subsubsection{Unsupervised Learning (Unüberwachtes Lernen)} 
 
-Beim Unsupervised Learning versucht ein künstliches neuronales Netz (siehe unten) Zusammenhänge, Ähnlichkeiten, Strukturen und Muster innerhalb einer großen Menge von Eingabedaten zu erkennen. Der Algorithmus kann so beispielsweise zur Gruppierung (Clustering) von Daten oder zur Findung von Beziehungen (Association) genutzt werden.\cite{01}
+Beim Unsupervised Learning versucht die KI Zusammenhänge, Ähnlichkeiten, Strukturen und Muster innerhalb einer großen Menge von Eingabedaten zu erkennen. Der Algorithmus kann so beispielsweise zur Gruppierung (Clustering) von Daten oder zur Findung von Beziehungen (Association) genutzt werden.\newline
+Ein Beispiel für Clustering (K-Clustering) ist Folgendes: Dem Algorithmus werden Bilder gegeben mit der Vorgabe, dass es sich hier um zwei (K=2) Arten von Tieren handelt: Hunde und Katzen. Der Algorithmus versucht also die Bilder über mehrere Iterationen hinweg nach Hunden und Katzen zu kategorisieren. So können in der Wirtschaft Daten genutzt werden, um z.B. Personengruppen zusammenzustellen, die für eine Marketingstrategie genutzt werden können. \newline
+Neben dem Clustering kann diese Lernmethode auch für sog. Associations werden genutzt, um Zusammenhänge zwischen den Daten zu finden. Eine Anwendung hierfür ist beispielsweise Amazon mit der Funktion "Kunden, die diesen Artikel gekauft haben, kauften auch diesen Artikel". \cite{01} 
+\begin{figure}[H]
+  \center
+  \includegraphics[width=12cm]{images/unsupervised.png}
+  \caption[Clustering von Hunden und Katzen auf Grund von Eigenschaften]{Clustering von Hunden und Katzen auf Grund von Eigenschaften (eigene Darstellung)}
+\end{figure}
 
-Ein Beispiel für Clustering (K-Clustering) ist Folgendes: Dem Algorithmus werden Bilder gegeben mit der Vorgabe, dass es sich hier um zwei (K=2) Arten von Tieren handelt: Hunde und Katzen. Der Algorithmus versucht also die Bilder über mehrere Iterationen hinweg nach Hunden und Katzen zu kategorisieren. So können in der Wirtschaft Daten genutzt werden, um z.B. Personengruppen zusammenzustellen, die für eine Marketingstrategie genutzt werden können.
-% Abbildung
-
-Neben dem Clustering kann diese Lernmethode auch für sog. Associations werden genutzt, um Zusammenhänge zwischen den Daten zu finden. Eine Anwendung hierfür ist beispielsweise Amazon mit der Funktion "Kunden, die diesen Artikel gekauft haben, kauften auch diesen Artikel".
-
-Auch Sprachassistenten und Chatbots funktionieren mit Unsupervised Learning. Sie lernen durch die Interaktion mit Nutzern, wodurch Alexa oder Siri die Spracheingaben des Besitzers immer besser verstehen und kommunizieren können. Mit welchen Daten der Algorithmus gefüttert wird, beeinflusst also die Ausgaben der KI. Ein Beispiel für ein Problematik, die sich aus dieser Methode ergibt, war 2016 der KI-Chatbot "Tay" von Microsoft. Dieser hatte Zugang zu Twitter. Innerhalb von 24 Stunden entwickelten sich die zunächst einfältigen Aussagen der KI hin zu, Hetze gegen Ausländer und Feministen und der Verarbeitung von Verschwörungstheorien. Es ist allerdings nicht bekannt, ob Tay absichtlich von Nutzern mit diesen Daten gefüttert wurde. %Quelle
+Auch Sprachassistenten und Chatbots funktionieren mit Unsupervised Learning. Sie lernen durch die Interaktion mit Nutzern, wodurch Alexa oder Siri die Spracheingaben des Besitzers immer besser verstehen und kommunizieren können. Mit welchen Daten der Algorithmus gefüttert wird, beeinflusst also die Ausgaben der KI. Ein Beispiel für ein Problematik, die sich aus dieser Methode ergibt, war 2016 der KI-Chatbot ''Tay'' von Microsoft. Dieser hatte Zugang zu Twitter. Innerhalb von 24 Stunden entwickelten sich die zunächst einfältigen Aussagen der KI hin zu, Hetze gegen Ausländer und Feministen und der Verarbeitung von Verschwörungstheorien. Es ist allerdings nicht bekannt, ob Tay absichtlich von Nutzern mit diesen Daten gefüttert wurde.\cite{13}
 
 \subsubsection{Reinforcement Learning (Bestärkendes Lernen)} 
 
-Das Reinforcement Learning ist die dritte Variante Algorithmen so zu trainieren. Für diese Methoden werden allerdings keine Daten zum Lernen benötigt, es werden durch Ausprobieren gelabelte Daten erzeugt. \cite{17} \newline
-Die Lernmethode simuliert den Lernvorgang bei Kindern. Diesen werden statt Anleitungen und Nachahmungsmuster, eher Regeln beigebracht. Anschließend soll sie dann aus eigenen Erfahrungen lernen. Mit positiver und negativer Verstärkung tritt der Lerneffekt ein. Das Kind kann dann auch zuvor unbekannte und kreative Lösungen finden.
-Beim Reinforcement Learning werden also nur (Spiel-)Regeln vorgegeben. Es werden keine Lerndaten oder erwartete Ergebnisse benötigt. Durch Belohnungssignale bei richtigen Entscheidungen verbessert sich die KI in einer Simulationsumgebung anhand des Versuch-Fehler-Prinzips (Trail and Error) dann schrittweise. Die bietet nicht nur den Vorteil, dass keine großen Mengen an Lerndaten vorbereitet und zu Verfügung gestellt werden müssen, sondern auch, dass komplexe Probleme so ohne menschliches Vorwissen gelöst werden können.%\cite{02}
+Das Reinforcement Learning ist die dritte Variante Algorithmen zu trainieren. Für diese Methode werden allerdings keine Daten zum Lernen benötigt, es werden durch Ausprobieren gelabelte Daten erzeugt. \cite{17} \newline
+Die Lernmethode simuliert den Lernvorgang bei Kindern. Diesen werden statt Anleitungen und Nachahmungsmuster eher Regeln beigebracht. Anschließend sollen sie dann aus eigenen Erfahrungen lernen. Mit positiver und negativer Verstärkung tritt der Lerneffekt ein. Das Kind kann dann auch zuvor unbekannte und kreative Lösungen finden.
+Beim Reinforcement Learning werden also nur (Spiel-)Regeln vorgegeben. Es werden keine Lerndaten oder erwartete Ergebnisse benötigt. Durch Belohnungssignale bei richtigen Entscheidungen und Sanktionen bei falschen verbessert sich die KI in einer Simulationsumgebung anhand des Versuch-Fehler-Prinzips (Trail and Error) dann schrittweise. Das bietet nicht nur den Vorteil, dass keine großen Mengen an Lerndaten vorbereitet und zu Verfügung gestellt werden müssen, sondern auch, dass komplexe Probleme ohne menschliches Vorwissen gelöst werden können.\cite{02}
 \newline
-%Beispiel Auto einparken
-Diese Lernmethode wurde auch für die Entwicklung der Spielsoftware AlphaGo Zero verwendet. Nur mit der Kenntnis der Spielregeln und durch Spielen gegen sich selbst, gelang es dem Computer eine große Spielstärke zu entwickeln. Außerdem nutzte er bislang unbekannte Spielzüge und -varianten. Mögliche Belohnungssignale für AlphaGo Zero wären ''Spiel gewonnen" oder z.B. '' möglichst große Anzahl verbleibender eigener Spielsteine am Ende der Partie.
+Diese Lernmethode wurde auch für die Entwicklung der Spielsoftware AlphaGo Zero verwendet. Nur mit der Kenntnis der Spielregeln und durch Spielen gegen sich selbst, gelang es dem Computer eine große Spielstärke zu entwickeln. Außerdem nutzte er bislang unbekannte Spielzüge und -varianten. Mögliche Belohnungssignale für AlphaGo Zero wären z.B. ''Spiel gewonnen" oder ''möglichst große Anzahl verbleibender eigener Spielsteine am Ende der Partie''.
 \cite{02}
 
 \subsection{Künstliche Neuronale Netze}
-%\paragraph{Neuronale Netze}
 
-Die wohl bekannteste Technologie der KI-Forschung sind künstliche neuronale Netze, kurz KNN (engl. Artificial Neural Network, ANN). Sie ein Teil des KI-Forschungsbereichs des maschinellen Lernens und sind angelehnt an eine natürliche Vernetzung von Neuronen in einem Nervensystem eins Lebewesens. Naber geht es weniger um die biologische Nachbildung, sondern mehr um eine Abstraktion von Informationsverarbeitung. 
+Die wohl bekannteste Technologie der KI-Forschung sind Künstliche Neuronale Netze, kurz KNN (engl. Artificial Neural Network, ANN). Sie sind ein Teil des maschinellen Lernens und sind angelehnt an eine natürliche Vernetzung von Neuronen in einem Nervensystem eines Lebewesens. Dabei geht es weniger um die biologische Nachbildung, sondern mehr um eine Abstraktion von Informationsverarbeitung. \cite{17}
 
 \begin{figure}[H]
   \center
@@ -168,21 +162,18 @@ Die wohl bekannteste Technologie der KI-Forschung sind künstliche neuronale Net
   \caption[Neuronale Netze als Teilmenge von KI]{Neuronale Netze als Teilmenge von KI (eigene Abbildung nach \cite{17})}
 \end{figure}
 
-Bei Künstliche neuronale Netze sind die Neuronen in sog. Schichten (engl. Layers) angeordnet. Der Begriff ''Topologie'' beschreibt dabei wie viele künstliche Neuronen sich auch wie vielen Schichten des KNN befinden und wie diese miteinander über sog. Kanten verbunden sind. Ein einfaches neuronales Netz besteht aus einer Eingabeschicht (input layer), einer verdeckten Schicht (engl. hidden layer), und einer Ausgabeschicht (output layer). Die verdeckte Schicht kann dabei beliebig breit sein, d.h. es können beliebig viele Neuronen nebeneinander in dieser Schicht angeordnet sein. Sobald sich in einem KNN mehr als eine verdeckte Schicht befindet wird von einem sog. Tiefen neuronalen Netz gesprochen. Da es sich bei einem KNN selten um einschichtige Netzwerke handelt, wird im Sprachgebrauch meistens unabhängig von der Tiefe von neuronalen Netzen gesprochen. 
+Bei Künstlichen Neuronalen Netzen sind die Neuronen in sog. Schichten (engl. Layers) angeordnet. Der Begriff ''Topologie'' beschreibt dabei wie viele künstliche Neuronen sich auf wie vielen Schichten des KNN befinden und wie diese miteinander über sogenannte Kanten verbunden sind. Ein einfaches neuronales Netz besteht aus einer Eingabeschicht (input layer), einer verdeckten Schicht (engl. hidden layer), und einer Ausgabeschicht (output layer). Die verdeckte Schicht kann dabei beliebig breit sein, d.h. es können beliebig viele Neuronen nebeneinander in dieser Schicht angeordnet sein. Sobald sich in einem KNN mehr als eine verdeckte Schicht befindet, wird von einem Tiefen Neuronalen Netz gesprochen. Da es sich bei einem KNN selten um einschichtige Netzwerke handelt, wird im Sprachgebrauch meistens unabhängig von der Tiefe von neuronalen Netzen gesprochen. \cite{17}
 
 \begin{figure}[H]
   \center
- \includegraphics[width=12cm]{images/KNN-Schichten.png}
+ \includegraphics[width=11cm]{images/KNN-Schichten.png}
   \caption[Aufbau eines neuronalen Netzes]{Aufbau eines neuronalen Netzes \cite{17}}
 \end{figure}
 
-Die Neuronen bekommen jeweils Eingaben von den Neuronen der vorherigen Schicht und geben dann eine gewichtete Ausgabe an die nächste Schicht weiter. Je mehr Gewicht eine Verbindung zwischen Neuronen enthält, desto intensiver ist hier der Informationsfluss. Dieses Prinzip wird als Deep Learning bezeichnet und stellt heutzutage den Standard-Anwendungsfall dar. Deep Learning wird in den Bereichen des maschinellen Lernens angewendet und würde sich in Abbildung 2.6 als Teilmenge dieses Gebietes wiederfinden. Dabei werden wie im menschlichen Hirn die Verbindungen zwischen den Neuronen je nach Gelerntem entweder gestärkt oder geschwächt. So werden über viele verdeckte Schichten und Lerniterationen hinweg komplexe Datenzusammenhänge entwickelt.\cite{17}
+Die Neuronen bekommen jeweils Eingaben von den Neuronen der vorherigen Schicht und geben dann eine gewichtete Ausgabe an die nächste Schicht weiter. Je mehr Gewicht eine Verbindung zwischen Neuronen enthält, desto intensiver ist hier der Informationsfluss. Dieses Prinzip wird als Deep Learning bezeichnet und stellt heutzutage den Standard-Anwendungsfall von neuronalen Netzen dar. Deep Learning wird in den Bereichen des maschinellen Lernens angewendet und würde sich in Abbildung 2.6 als Teilmenge dieses Gebietes wiederfinden. Dabei werden wie im menschlichen Hirn die Verbindungen zwischen den Neuronen je nach Gelerntem entweder gestärkt oder geschwächt. So werden über viele verdeckte Schichten und Lerniterationen hinweg komplexe Datenzusammenhänge entwickelt.\newline
+Durch verschiedene Arten von neuronalen Netzen können verschiedene Probleme gelöst werden. So werden beispielsweise Konvolutionale Neuronale Netze (CNNs) für die Verarbeitung von Bildern und Videos verwendet und Generative Adversarial Networks (GANs) zur Generierung von authentischen künstlichen Daten, wie künstliche Bilder oder Stimmen. Dies sind nur zwei Beispiele von Vielen.\cite{17} 
 
-%Beispiel???  
-
-Durch verschiedene Arten von neuronalen Netzen können verschiedene Probleme gelöst werden. So werden beispielsweise Konvolutionale Neuronale Netze (CNNs) beispielsweise für Verarbeitung von Bildern und Videos verwendet und Generative Adversarial Networks (GANs) zur Generierung von authentischen künstlichen Daten, wie künstliche Bilder oder Stimmen. Dies nur nur zwei Beispiele von Vielen.
-
-Problematisch ist die sog. Black Box. Die verdeckten Schichten tragen diesen Namen, weil man nicht nachvollziehen kann was wirklich in ihnen passiert. Der Mensch kann also nicht erkennen warum die KI am Ende die jeweilige Entscheidung getroffen hat. Ein Beispiel für diese Problematik beschreibt Prof. Ulrich Walter von der TU München bei einem Vortrag über künstliche Intelligenz im deutschen Museum am 19.10.2022: Eine KI wurde durch Deep Learning darauf trainiert Schiffe zu erkennen. Dies hat das System auch sehr gut geschafft. Bei Betrachtung der sog. Heat-Map, die anzeigt aus welchen Bereichen der Bilder die KI schließen konnte, dass es sich um ein Schiff handelt, wurde klar, dass sie nicht das Schiff sondern das Wasser erkannte. Daraus lässt sich schließen, dass der Algorithmus nur mit Bildern von Schiffen auf dem Wasser trainiert wurde. Sie erkennt also das Wasser als Schiff. \cite{16}
+Problematisch ist das sog. ''Black Box''-Verhalten. Die verdeckten Schichten tragen diesen Namen, weil man nicht nachvollziehen kann, was wirklich in ihnen passiert. Der Mensch kann also nicht erkennen, warum die KI am Ende die jeweilige Entscheidung getroffen hat. Ein Beispiel für diese Problematik beschreibt Prof. Ulrich Walter von der TU München bei einem Vortrag über künstliche Intelligenz im deutschen Museum am 19.10.2022: Eine KI wurde durch Deep Learning darauf trainiert Schiffe zu erkennen. Dies hat das System auch sehr gut geschafft. Bei Betrachtung der sog. Heat-Map, die anzeigt aus welchen Bereichen der Bilder die KI schließen konnte, dass es sich um ein Schiff handelt, wurde klar, dass sie nicht das Schiff, sondern das Wasser erkannte. Daraus lässt sich schließen, dass der Algorithmus nur mit Bildern von Schiffen auf dem Wasser trainiert wurde. Sie erkennt also das Wasser als ''Schiff''.\cite{16}
 
 \begin{figure}[H]
   \center
@@ -190,7 +181,7 @@ Problematisch ist die sog. Black Box. Die verdeckten Schichten tragen diesen Nam
   \caption[Heat Map zur Erkennung eines Schiffes]{Heat Map zur Erkennung eines Schiffes (Übernommen aus Vortrag \cite{16})}
 \end{figure}
 
-Ähnliches ist auch beim Trainieren einer KI auf die Erkennung von Pferden in Bildern passiert. Hier wurde der Algorithmus wohl überwiegend mit Bildern trainiert, die Worte wie ''Pferd'' beinhalteten.
+Ähnliches ist auch beim Trainieren einer KI auf die Erkennung von Pferden in Bildern passiert. Hier wurde der Algorithmus wohl überwiegend mit Bildern trainiert, die Worte wie ''Pferd'' beinhalteten. \cite{16}
 
 \begin{figure}[H]
   \center
@@ -198,13 +189,13 @@ Problematisch ist die sog. Black Box. Die verdeckten Schichten tragen diesen Nam
   \caption[Heat Map zur Erkennung eines Pferdes]{Heat Map zur Erkennung eines Pferdes(Übernommen aus Vortrag \cite{16})}
 \end{figure}
 
-Zusammenfassend lässt sich sagen, dass neuronale Netze bzw. Deep-Learning-Netze in den letzten Jahren Durchbrüche in zahlreihe Bereichen erzielt hat. Darunter zählen unter anderem das Treffen von Voraussagen, das automatische Erkennen von Objekten auf Bildern und das Verstehen und Verfassen von Texten. Die Qualität eines neuronalen Netzes hängt dabei stark von den verwendeten Lerndaten, bzw. den vorgegebenen Regeln (bei Reinforcement Learning) ab. 
+Zusammenfassend lässt sich sagen, dass neuronale Netze bzw. Deep-Learning-Netze in den letzten Jahren Durchbrüche in zahlreihe Bereichen erzielt haben. Darunter zählt das Treffen von Voraussagen, das automatische Erkennen von Objekten auf Bildern und das Verstehen und Verfassen von Texten. Die Qualität eines neuronalen Netzes hängt dabei stark von den verwendeten Lerndaten, bzw. den vorgegebenen Regeln (bei Reinforcement Learning) ab. 
 
 \subsection{Weitere Technologien und Anwendungen}
 
 \subsubsection{Regelbasierte und Experten-Systeme}
 
-Neben den lernenden KI-Systemen, die mit großen Mengen an Daten trainiert werden, gibt es auch regelbasierte Systeme. Der Mensch gibt hier einfach gesagt durch If-Then-Beziehungen oder einen Entscheidungsbaum feste Regeln vor anhand das Systeme Entscheidungen treffen soll. Eines dieser Systeme ist das sog. Expertensystem. Der Experte gibt dem Algorithmus sein Expertenwissen über die spezielle Aufgabe bzw. die Problematik. Das System kann dann automatisiert Entscheidungen treffen anhand von Kriterien, die er nicht selbst gelernt hat, sondern die ihm vorgegeben wurden. Diese Systeme sind in der Regel leichter zu implementieren, sie werden allerdings schnell sehr komplex und unübersichtlich.
+Neben den lernenden KI-Systemen, die mit großen Mengen an Daten trainiert werden, gibt es auch regelbasierte Systeme. Der Mensch gibt hier einfach gesagt durch If-Then-Beziehungen oder einen Entscheidungsbaum feste Regeln vor anhand das Systeme Entscheidungen treffen soll. Eines dieser Systeme ist das sog. Expertensystem. Der Experte gibt dem Algorithmus sein Expertenwissen über die spezielle Aufgabe bzw. die Problematik. Das System kann dann anhand von Kriterien, die er nicht selbst gelernt hat, sondern die ihm vorgegeben wurden, automatisiert Entscheidungen treffen. Diese Systeme sind in der Regel leichter zu implementieren, sie werden allerdings schnell sehr komplex und unübersichtlich.\cite{01}
 Anwendung findet regelbasierte KI-Systeme vor allem in Bereichen, in denen ein hohes Maß an Zuverlässigkeit und Sicherheit erforderlich ist und Entscheidungen des Systems einfach vom Experten überprüfbar sind. 
 Ein Anwendungsbeispiel wäre ein medizinisches Diagnose-System, das anhand von Untersuchungsresultaten und Symptomen bestimmte Krankheiten diagnostiziert.
 
@@ -294,7 +285,7 @@ Die Produktivität oder auch Effizienz beschreibt das Verhältnis vom mengenmä�
 Inwieweit das Produktionsergebnis der Planung entspricht, wird durch die Effektivität ermittelt. Diese Kennzahl kann sich sowohl auf die Menge als auch auf die Dauer des Prozesses oder die Qualität des Produktes oder der Dienstleistung beziehen. Hier werden also der Ist-Output mir dem planmäßigen Output ins Verhältnis gesetzt.\cite{20}
 
 \begin{equation}
-  Effektivit"at =\frac{Ist-Output}{Plan-Output}
+ Effektivit"at =\frac{Ist-Output}{Plan-Output}
 \end{equation}
 
 
@@ -411,39 +402,19 @@ Auch die Vielfältigkeit der Produktionen führt zu einem Hemmnis. Da wie im Kap
 
 \section{Potenziale von KI-Anwendungen in der Produktion}
 
-Dass neue Technologien wie KI-Systeme große Potenziale in der Wirtschaft bergen, ist den meisten Unternehmen bewusst. Befragte deutsche Industrieunternehmen sahen 2020 Predictive Maintenance als wichtigsten Vorteil von künstlicher Intelligenz im Kontext von Industrie 4.0, dicht gefolgt von der Steigerung der Produktivität und der Optimierung von Produktions- und Fertigungsprozessen. Als weitere Vorteile werden die bessere Skalierbarkeit und die Reduktion der Kosten gesehen.\cite{28} Auch im Experteninterview mit Nico Becker wird klar, dass KI Technologien in der Produktion eine große Rollen spielen und laufend über weitere mögliche Einsatzszenarien nachgedacht wird. Dennoch schöpfen die wenigsten Unternehmen das volle Potenzial derzeit aus. Vor allem große Unternehmen nutzen bereits KI-Systeme für die Instandhaltung und zur Steigerung der Produktivität, doch oft werden hier nur Lösungen für einzelne Bereiche verwirklicht. Ganzheitliche Konzepte in Zusammenhang mit der Industrie 4.0 sind selten.\cite{02}
+Dass neue Technologien wie KI-Systeme große Potenziale in der Wirtschaft bergen, ist den meisten Unternehmen bewusst. Befragte deutsche Industrieunternehmen sahen 2020 Predictive Maintenance als wichtigsten Vorteil von künstlicher Intelligenz im Kontext von Industrie 4.0, dicht gefolgt von der Steigerung der Produktivität und der Optimierung von Produktions- und Fertigungsprozessen. Als weitere Vorteile werden die bessere Skalierbarkeit und die Reduktion der Kosten gesehen.\cite{28} \newline Auch im Experteninterview mit Nico Becker wird klar, dass KI Technologien in der Produktion eine große Rollen spielen und laufend über weitere mögliche Einsatzszenarien nachgedacht wird. Dennoch schöpfen die wenigsten Unternehmen das volle Potenzial derzeit aus. Vor allem große Unternehmen nutzen bereits KI-Systeme für die Instandhaltung und zur Steigerung der Produktivität, doch oft werden hier nur Lösungen für einzelne Bereiche verwirklicht. Ganzheitliche Konzepte in Zusammenhang mit der Industrie 4.0 sind selten.\cite{02}
 
 Potenziale sind also neben der Entwicklung von neuen KI-Anwendungen die Nutzbarmachung von existierenden und verfügbaren Technologien und dementsprechend der Abbau der im vorhergehen Kapitel beschriebenen Hemmnisse. Betrachtet man die Hürde der hohen Kosten, steckt Potenzial in den Lösungen und Technologien, die einen günstigeren Einsatz von KI ermöglichen. Als Beispiele hierfür nennt Nico Becker AutoML oder Low-Code bzw. No-Code Plattformen, die das Erstellen von KI-Modellen erleichtern. Doch der Einsatz von KI benötigt andere Technologien der Digitalisierung. Durch Edge-Devices, das sind Geräte, die lokal Daten am Rand eines Netzwerkes in Echtzeit verarbeiten, ist es möglich KI-Modelle direkt in Produktionsanlagen einzusetzen, die so ohne eine wesentliche Zeitverzögerung Entscheidungen treffen können. Durch die lokale Erfassung und Verarbeitung großer Datenmengen, werden Speicher- und Übertragungskosten eingespart und nur bestimmte Daten werden in einer Cloud oder andere IT-Infrastruktur übertagen. Hierfür ist eine leistungsstarke Netzwerk-Infrastruktur erforderlich, weshalb hier auch die Industrial 5G Technologie ein wichtige Rolle spielt.\cite{36} Zusammengefasst bedeutet das, dass das Potenzial nicht bei KI alleine liegt, sondern in der Kombination mit anderen Technologien der Digitalisierung.
 
 Vor allem in Deutschland spielt Datenschutz und -sicherheit eine große Rolle. Nur wenige Unternehmen sind bereit sensible Fertigungsdaten an andere Unternehmen weiterzugeben. Doch genau das birgt ein Potenzial. KI-Experte Nico Becker gibt folgendes Beispiel: Stellt ein produzierendes Unternehmen als Nutzer einer Maschine dem Hersteller Sensordaten zur Verfügung, die während der Nutzung der Maschine erfasst werden, kann dieser Verbesserungen an der Maschine vornehmen und detailliertere Informationen über den Zustand bereit stellen.\newline
 Allgemein nutzen Unternehmen ihre Daten kaum. So werden weniger als ein Prozent der unstrukturierten Daten analysiert, wobei der Anteil dieser "Dark Data" bei bis 80\% der generierten Daten liegt.\cite{36}
 
+Im vorherigen Kapitel wurde auch die hohe Komplexität als Hürde beschrieben. Aus diesem Grund sieht Nico Becker im Experteninterview das Thema Computer Vision als Potenzial, da gerade die Methode für den Menschen gut nachvollziehbar und intuitiv. So nutzen auch menschliche Prüfer ''das Sehen'', um zu urteilen und zu entscheiden. Zwar gibt es schon zahlreiche Anwendungen mit dieser KI-Technologie, doch das Potenzial ist hier noch nicht ausgeschöpft. \newline Auch andere Anwendungen, die dem Nutzer visuelle Informationen aufbereiten werden in der Literatur als vielversprechende Technologien gesehen, wie z.B. Extended Reality. Unter diesem Ausdruck sind Augmented(AR), Mixed (MR) und Virtual Reality (VR) zusammengefasst. Die Technologien werden vor allem im Zusammenhang mit digitalen Assistenzsystemen verwendet. Um eine intuitive Interaktion zwischen dem Nutzer und dem System zu ermöglichen werden KI-Technologien, wie Spracherkennung und -generierung verwendet. Dies ermöglicht einer bessere Reaktionsfähigkeit des Systems auf den Nutzer und präziseres Feedback. Diese Technologien kommen bereits zum Einlernen und Trainieren von Mitarbeitenden zum Einsatz, wobei trotzdem Bildschirme oder Tablets nach wie vor am häufigsten verwendet werden.\cite{37} \newline
+Ein weitere Ansatz, der die Komplexität der Technologien mindern könnte, sind technisch besser qualifizierte Mitarbeiter. Trotz Digitalisierung wird der Mensch weiterhin unverzichtbar in einer Produktion sein. Zwar übernehmen Maschinen immer mehr standardisierte Aufgaben, doch für Problemfälle, planerische und konzeptionelle Aufgaben und Lösungen wird menschliche Intelligenz und Kreativität benötigt. So sinkt der Anteil manueller Tätigkeiten, doch der Bedarf an IT-Verständnis steigt.\cite{36} Mit Hilfe von technisch gut ausgebildetem Personal, das sich schneller auf neue Technologien einstellen kann, sinkt die Hürde der Komplexität. Denn die Literatur ist sich einige, der Mensch wird weiterhin eine wichtige Rolle in produzierenden Unternehmen spielen. Das Ziel ist es das Arbeiten von KI und Mensch nebeneinader umzuwandeln, sodass die KI die Arbeit der Menschen vereinfacht und bereichert.\cite{02}
 
-
-
---Hohe Komplexität: Ich denke großes Potential ist nach wie vor bei den Computer Vision-Anwendungen. Diese Methoden sind für Menschen gut nachvollziehbar und intuitiv, da auch menschliche Prüfer durch das, was sie sehen urteilen. 
-Extended Reality, Digitaler Zwilling
-
---Außerdem werden Verfahren, die auf Zeitreihen basieren sicher eine Rolle spielen. Mithilfe von Zeitreihen lassen sich viele Predictive-Maintenance Fragestellungen beantworten. Diese sind wichtig, um Produktionsausfälle und Stillstände zu vermeiden. Auch Forecasting von Aufträgen und Lagerbeständen sind meiner Meinung nach relevant, um reibungslose Produktion sicherzustellen
-
---die meisten haben gemeinsam, dass der Mensch im mittelpunkt stehen soll, Menschen besser qualifizieren
-
-% Computer vision, NLP, Gernerierung von sprache, ... betrachten und dann je 1-2 beispiele eingeornet in den produktionsteil, wo das zum Einsatz kommen könnte. 
-In den Projekten, von denen ich weiß, kamen stets Computer Vision Methoden zum Einsatz. 
-
-Es gibt innerhalb von Europa Initiativen, die sich darum bemühen, Potentiale in der Produktion zu erschließen. Z.B. EuProGigant - EuProGigant.
-%Nachhaltigkeit? Mit seinen Lösungen aus dem Digital-Enterprise-Portfolio und den digitalen Zwillingen von Produkt, Produktion und Performance sparen Kunden Ressourcen wie Energie, Wasser und Abwasser und reduzieren Abfall sowie CO2-Emissionen 36
-
-%Deutschland besitzt im internationalen Wettbewerb eine hervorragende Ausgangsposition, um die digitale Transformation der Industrie mitzugestalten. Damit der Standort Deutschland seinen Vorsprung halten kann, müssen Politik, Wirtschaft, Wissenschaft und Gesellschaft aber noch große Aufgaben bewältigen. Dies beginnt bei den technologischen Voraussetzungen für eine flächendeckende und schnelle Datenübertragung, geht über neue Bildungskonzepte und reicht bis zu einem Mentalitätswandel von Wirtschaft und Gesellschaft. \cite{36}
-
-\subsection{Extended Reality}
-Unter dem Ausdruck Extended Reality sind Augmented(AR), Mixed (MR) und Virtual Reality (VR) zusammengefasst. Die Technologien werden vor allem im Zusammenhang mit digitalen Assistenzsystemen verwendet. Um Interaktion zwischen dem Nutzer und dem System zu ermöglichen werden KI-Technologien, wie Spracherkennung und -generierung verwendet. Dies ermöglicht einer bessere Reaktionsfähigkeit des Systems auf den Nutzer und präziseres Feedback. 
-
-Laut einer Umfrage sollen zukünftig solche digitalen Assistenzsysteme in den Bereichen der Fertigung und Montage verstärkt zum Einsatz kommen, um hier stationäre Arbeitsplätze zu ermöglichen, dort aktuelle Informationen zur Verfügung zu haben und und um Laufwegen und Wartezeiten zu reduzieren. Anwendungen der Extended Reality sind derzeit eher im Consumer Bereich verbreitet, doch auch für die Industrie bieten diese Technologien Potentiale, z.B. bei Arbeiten, für die überwiegend beide Hände genutzt werden müssen. Diese Visualisierungstechnologien kommen bereits zum Einlernen und Trainieren von Mitarbeitenden zum Einsatz, wobei trotzdem Bildschirme oder Tablets nach wie vor am häufigsten verwendet werden.
-
-\subsection{Digitaler Zwilling}
-Der Digitale Zwilling (kurz DZ) stellt eine virtuelle Abbildung eines physischen Gegenstücks dar. Beiden sind über konstantes Datenaustausch miteinander verbunden. So sind Informationen über das reale Objekt auch sofort digital zugänglich und können weiterverarbeitet werden. Auch andersherum kann durch Änderungen am virtuellen Objekt, das reale Gegenstück beeinflusst werden. Für die meisten Anwendungen des DZ werden maschinelles Lernen, Bild- und Tonverarbeitung, Mustererkennung und weitere KI-Technologien genutzt.
-Neu ist das Konzept eines digitalen Zwillings nicht. Schon 2012 stellte die NASA den digitalen Zwilling als zukunftsweidende Technologie für die Entwicklung und Simulation für Luft- und Raumfahrt dar. Auch in der Produktionswirtschaft hat diese Technologie großes Potential, denn es kann für zahlreiche Anwendungen, wie Prognosen, Analysen und zur Prozessoptimierung genutzt werden. Nicht nur ein Objekt (z.B. Produkt) kann einen DZ haben, auch ganze Anlagen oder Prozesse können digital dargestellt werden. \cite{32}
+Neben diesen Potenzialen, bieten Lösungen der Digitalisierung und KI auch eine Möglichkeit die Produktion nachhaltiger zu gestalten. Durch diese Technologien Ressourcen wie Energie, Wasser und Abwasser gespart werden und Abfall, sowie CO2-Emissionen reduziert werden. \cite{36}\newline
+Eine vielversprechende Technologie, die in Bezug auf Digitalisierung und KI in der Produktion oft genannt wird, ist der sogenannte ''Digitale Zwilling (DZ)''. Er stellt eine virtuelle Abbildung eines physischen Gegenstücks dar, z.B. eines Produktes, Prozesses, einer Produktionsanlage oder sogar einer ganzen Fabrik dar. Beide sind über konstantes Datenaustausch miteinander verbunden. So sind Informationen über das reale Objekt auch sofort digital zugänglich und können weiterverarbeitet werden. Auch andersherum kann durch Änderungen am virtuellen Objekt, das reale Gegenstück beeinflusst werden. Für die meisten Anwendungen des DZ werden maschinelles Lernen, Bild- und Tonverarbeitung, Mustererkennung und weitere KI-Technologien genutzt.
+Neu ist das Konzept eines digitalen Zwillings nicht. Schon 2012 stellte die NASA den digitalen Zwilling als zukunftsweidende Technologie für die Entwicklung und Simulation für Luft- und Raumfahrt dar. Auch in der Produktionswirtschaft hat diese Technologie großes Potenzial, denn es kann für zahlreiche Anwendungen, wie unter anderem Prognosen, Analysen und zur Prozessoptimierung genutzt werden.\cite{32}
 
 \begin{figure}[H]
   \center
@@ -451,17 +422,29 @@ Neu ist das Konzept eines digitalen Zwillings nicht. Schon 2012 stellte die NASA
   \caption[Digitaler Zwilling in Produktion und Logistik]{Digitaler Zwilling in Produktion und Logistik \cite{34}}
 \end{figure}
 
-Trotz dessen, dass die Technologie des digitalen Zwillings schon in zahlreichen produzierenden Unternehmen für unterschiedlichste Anwendungsbereiche genutzt wird, ist sie hier als Potenzial aufgeführt. Denn für die zunehmend digitalisierten Produktionen und Nutzbarkeit der Daten, sind immer mehr Anwendungen möglich. Die Möglichkeiten werden teilweise als nahezu grenzenlos beschrieben, da da die meisten bisherigen Anwendungen von KI in der Produktion darin vereint werden können. Neben der Instandhaltung und der Steuerung und Überwachung der Produktionsmaschinen, können auch Prozesse beliebig über die gesamte Wertschöpfungskette simuliert werden. Daraus entsteht ein großes Potential zur Steigerung der Flexibilität, Effizienz, Qualität, Effektivität, aber auch zur Senkung des Risikos bei Änderungen, der Kosten und Komplexität von Prozessen.\cite{33}
+Trotz dessen, dass die Technologie des digitalen Zwillings schon in zahlreichen produzierenden Unternehmen für unterschiedlichste Anwendungsbereiche genutzt wird, ist sie hier als Potenzial aufgeführt. Denn durch die zunehmend digitalisierten Produktionen und nutzbaren Daten sind immer mehr Anwendungen möglich. Die Möglichkeiten werden teilweise als nahezu grenzenlos beschrieben, da die meisten bisherigen Anwendungen von KI in der Produktion darin vereint werden können. Neben der Instandhaltung und der Steuerung und Überwachung der Produktionsmaschinen, können auch Prozesse beliebig über die gesamte Wertschöpfungskette simuliert werden. Daraus entsteht ein großes Potential zur Steigerung der Flexibilität, Effizienz, Qualität, Effektivität, aber auch zur Senkung der Kosten und Komplexität von Prozessen und Minderung des Risikos bei Veränderungen.\cite{33}
 
-\subsection{Kulturelle Anwendungen}
-Dieses Potential von KI bezieht sich nicht auf klassische produzierende Unternehmen aus dem Maschinenbau, der Automobil- oder Elektronikindustrie, sondern betrifft andere Produkte, wie Bilder, Texte, Ton- und Musikaufnahmen und Bewegtbilder. 
+Nicht nur klassische produzierende Unternehmen aus dem Maschinenbau, der Automobil- oder Elektronikindustrie können von KI-Technologien profitieren, auch die Produktion von kulturellen Gütern, wie Bilder, Texte, Ton- und Musikaufnahmen und Bewegtbilder kann dieses Potenzial nutzen. Schon aktuell können beispielsweise Bilder nur durch Eingabe von Vorgaben von einer KI wie DALL.E 2 von OpenAI oder Stable Diffusion von Hugging Face generiert werden. Dies ist auch mit Videos möglich, wie Unternehmen wir MetaAI mit Make-a-video beweisen. Zwar sind diese generierten Bilder und Videos derzeit noch eine lustige Spielerei mit nicht allzu hoher Qualität, doch in Zukunft könnten derartige KI-Systeme für die Filmindustrie von Nutzen sein. Special Effects und Filmsets könnten so anstatt aufwendig animiert und gebaut zu werden, durch eine KI generiert werden.
 
+\begin{figure}[H]
+  \center
+ \includegraphics[width=14cm]{images/stableDif.png}
+  \caption[Bilder generiert von Stable Diffusion]{Bilder generiert von Stable Diffusion \cite{38}}
+\end{figure}
+
+Innerhalb von Europa gibt es Initiativen und Forschungsprojekte, die sich mit Potenzialen in der Produktion beschäftigen, z.B. EuProGigant vom Österreichisch-Deutschem Projektkonsortium. Deren Ziel ist es zentrale Fragestellungen zum Thema ''Smarte und souveräne Nutzung von Daten für die Produktion'' zu bearbeiten. Damit wollen sie unter anderem Ziele, wie eine Produktivitätssteigerung von 10\% erreichen.\cite{39}
+\begin{figure}[H]
+  \center
+ \includegraphics[width=10cm]{images/eupro.png}
+  \caption[Zielwirkung von EuProGigant]{Zielwirkung von EuProGigant \cite{39}}
+\end{figure}
+
+Im internationalen Vergleich steht Deutschland im Bezug auf die digitale Transformation gut da. Damit das auch weiterhin der Fall ist, müssen Politik, Wirtschaft, Wissenschaft und Gesellschaft weiterhin einigen Hürden stellen. Beispiele sind der Ausbau einer flächendeckende und schnelle Datenübertragung, neue Bildungskonzepte und reicht bis zu einem Mentalitätswandel von Wirtschaft und Gesellschaft. \cite{36}
 
 \chapter{Fazit und Ausblick}
 
-Sowohl der Forschungsbereich der künstlichen Intelligenz als auch die KI-Anwendungen, die für die Produktion genutzt werden können, entwickeln sich stetig und schnell weiter. Die Vorteile und Potentiale, die solche Technologien bieten, sind in der Industrie bekannt. Trotzdem sind viele vor allem kleine Unternehmen eher zurückhaltend, was die Implementierung dieser Lösungen angeht. Für sie ist es schwer abzuschätzen, ob der Nutzen die Kosten aufwiegt. Auch andere Hausforderungen, wie das Black-Box-Verhalten von Technologien mit maschinellem Lernen und rechtliche Fragen der Haftung wirken hemmend. Trotzdem zeigen Vorreiter der produzierenden Industrie, dass sich der Einsatz smarter Lösungen lohnt. Die Potentiale für Technologien der künstlichen Intelligenz in der Produktion sind groß und werden sich in den nächsten Jahren auch Grund des technischen Fortschritts immer weiter vergrößern. Die Frage, ob die Industrie diese Potentiale auch nutzt, bleibt offen.
-%Potenziale sind also neben der Entwicklung von neuen KI-Anwendungen die Nutzbarmachung von existierenden und verfügbaren Technologien und dementsprechend das Abbauen der im vorhergehen Kapitel beschriebenen Hemmnisse. <- guter Satz für Fazit
-%das das potential nicht allein bei KI liegt sondern die Verbindung von KI mit anderen Technologie der Digitalisierung, wie zb Datennetze 5G ud so
+Sowohl der Forschungsbereich der künstlichen Intelligenz als auch die KI-Anwendungen, die für die Produktion genutzt werden können, entwickeln sich stetig und schnell weiter. Die Vorteile und Potenziale, die solche Technologien bieten, sind in der Industrie bekannt. Trotzdem sind viele vor allem kleine Unternehmen eher zurückhaltend, was die Implementierung dieser Lösungen angeht. Für sie ist es schwer abzuschätzen, ob der Nutzen die Kosten aufwiegt. Auch andere Hausforderungen, wie das Black-Box-Verhalten von Technologien mit maschinellem Lernen, die hohen Kosten zur Implementierung von KI-Technologien und Datensicherheit wirken hemmend. Trotzdem zeigen Vorreiter der produzierenden Industrie, dass sich der Einsatz smarter Lösungen lohnt. Die Potenziale für Technologien der künstlichen Intelligenz in der Produktion sind groß und werden sich in den nächsten Jahren auch Grund des technischen Fortschritts immer weiter vergrößern. Doch auch die Nutzbarmachung der bereits vorhandenen Technologien ist wichtig.\newline
+Klar ist, dass das Potenzial nicht alleine bei KI liegt, sondern Themen aus der Digitalisierung und der Datenverarbeitung eine mindestens genauso große Rollen dabei spielen Produktionen effizienter zu gestalten.
 
 \listoffigures
 
